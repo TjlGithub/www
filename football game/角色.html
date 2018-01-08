@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <title>2018世界杯攻守赛 选角色</title>
+</head>
+<body class="role-bg">
+  <div class="role">
+    <!-- Swiper -->
+     <div class="swiper-container">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide">
+           <img src="images/role-shoot.png" alt="">
+         </div>
+         <div class="swiper-slide">
+            <img src="images/role-hold.png" alt="">
+         </div>
+       </div>
+       <!-- Add Arrows -->
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+     </div>
+
+     <!-- Swiper JS -->
+     <script src="./js/swiper.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper('.swiper-container', {
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+       });
+     </script>
+    <a class="role-btn" href="javascript:;">
+      <img src="images/role-btn.png" alt="">
+    </a>
+  </div>
+</body>
+</html>

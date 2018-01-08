@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="./js/zcircleMove.js" charset="utf-8"></script>
+  <title>运动获取流量</title>
+  <style>
+    .yuan{ width: 10rem; height: 4.2rem; position: absolute; top: 6.2rem;}
+    .move{ width: 4.9rem; height: 4.9rem; margin: 0 auto; position: relative;}
+    .circleRun{ width: 4.9rem; height: 4.9rem;}
+    .info{ position: absolute; top: 1.8rem; left: 0; text-align: center;}
+    .info p{ color: #8c8c8c;}
+    .info span{ display: block; width: 4.9rem; color: #565656; font-weight: bold;}
+  </style>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
+        运动获取流量
+    </div>
+    <div class="yuan">
+      <div class="move">
+        <canvas class="circleRun" data-run="0" id="canvasThree" amout="1000" nowdate="1000"></canvas>
+        <div class="info">
+          <p class="font26">今日步数</p>
+          <span class="font54">15960</span>
+        </div>
+      </div>
+    </div>
+    <script>
+	$(function(){
+		var findCanvas=$("#canvasThree");
+		var percents=findCanvas.attr('nowData')/findCanvas.attr('amout');
+		 percents=0.75;
+		//percents 为百分比的值  范围 0- 1
+		runCircle(
+		   {
+			obj:'canvasThree',
+			percent:0.75,
+			url:'./images/circle.png',   //飞机小图地址
+			imgWidth:0,
+			imgHeight:0,
+			circleBottomColor:"#e6eaed",//圆环底色
+			outerColorStart:'#fff',  //外部圆环 渐变色
+			outerColorMid:'#fff',
+			outerColorEnd:'#fff',
+			innerColorStart:'#ffa800',  //内部圆环 渐变色
+			innerColorEnd:'#ffa800',
+		   }
+		);
+	})
+</script>
+    <img style="width:10rem;" src="./yundong.jpg" alt="" />
+  </div>
+</body>
+</html>

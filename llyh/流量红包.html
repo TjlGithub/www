@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量红包</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
+        流量红包
+    </div>
+    <div class="redPacket">
+      <ul class="tab clearfix">
+        <li class="cur font26">随机</li>
+        <li class="font26">定额</li>
+      </ul>
+      <div class="redPacketMain on">
+        <form action="#">
+          <div class="group">
+            <input class="font30" type="tel" value="10" name="add1" id="add1" onkeypress="compute2()" onblur="compute2()" onkeyup="compute2()">
+            <span class="font30">总流量</span>
+            <em class="font30">MB</em>
+          </div>
+          <div class="group">
+            <input class="font30" type="tel" value="1" name="add2" id="add2" onkeypress="compute2()" onblur="compute2()" onkeyup="compute2()">
+            <span class="font30">红包个数</span>
+            <em class="font30">个</em>
+          </div>
+          <div class="group group3">
+            <input class="font30" type="text" placeholder="恭喜发财，大吉大利！">
+          </div>
+        </form>
+        <p class="font56" name="add" id="add6">10MB</p>
+        <!-- <script type="text/javascript">
+           function compute2(){
+             var o4 = document.getElementById("add1");
+             var o5 = document.getElementById("add2");
+             if(!($('#add0').val()=='')){
+             o5.innerHTML = o4.value+"MB";
+             }
+           }
+        </script> -->
+        <script>
+          function filtervalue(o){
+          if(!o.value.match(/^[\+\-]?\d*?\.?\d*?$/))
+          o.value=o.t_value;
+          else
+          o.t_value=o.value;
+          if(o.value.match(/^(?:[\+\-]?\d+(?:\.\d+)?)?$/))
+          o.o_value=o.value
+          }
+          function compute2(){
+          o4 = document.getElementById("add1");
+          o5 = document.getElementById("add2");
+          o6 = document.getElementById("add6");
+          filtervalue(o4);
+          filtervalue(o5);
+          o6.innerHTML = o4.value*o5.value+"MB";
+          }
+        </script>
+      </div>
+
+      <div class="redPacketMain">
+        <form action="#">
+          <div class="group">
+            <input class="font30" type="tel"  onkeypress="compute()" onblur="compute()" onkeyup="compute()" value="10" name="add1" id="add3" o_value t_value>
+            <span class="font30">单份流量</span>
+            <em class="font30">MB</em>
+          </div>
+          <div class="group">
+            <input class="font30" type="tel"  onkeypress="compute()" onblur="compute()" onkeyup="compute()" value="1" name="add2" id="add4" o_value t_value placeholder="0">
+            <span class="font30">红包个数</span>
+            <em class="font30">个</em>
+          </div>
+          <div class="group group3">
+            <input class="font30" type="text" placeholder="恭喜发财，大吉大利！">
+          </div>
+        </form>
+        <script>
+          function filtervalue(o){
+          if(!o.value.match(/^[\+\-]?\d*?\.?\d*?$/))
+          o.value=o.t_value;
+          else
+          o.t_value=o.value;
+          if(o.value.match(/^(?:[\+\-]?\d+(?:\.\d+)?)?$/))
+          o.o_value=o.value
+          }
+          function compute(){
+          o1 = document.getElementById("add3");
+          o2 = document.getElementById("add4");
+          o3 = document.getElementById("add5");
+          filtervalue(o1);
+          filtervalue(o2);
+          o3.innerHTML = o1.value*o2.value+"MB";
+          }
+        </script>
+        <p class="font56" name="add" id="add5">10MB</p>
+      </div>
+      <p class="font28">当前流量余额：20000MB</p>
+      <p class="font30">支付流量</p>
+
+      <a class="btn font32" href="流量红包-分享.html">塞流量进红包</a>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".redPacket .tab li").click(function(){
+      $(".redPacket .tab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+      $(".redPacket .redPacketMain").hide().eq($(this).index()).show();
+      });
+    });
+    </script>
+
+
+  </div>
+</body>
+</html>

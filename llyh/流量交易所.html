@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量交易所</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
+        流量交易所
+    </div>
+    <div class="exchange">
+      <ul class="tab clearfix">
+        <li class="cur font28"><span>购买</span></li>
+        <li class="font28"><span>出售</span></li>
+      </ul>
+      <div class="exchangeMain on">
+        <ul class="filter">
+          <li class="font26">移动<i></i>
+            <ul>
+              <li>11</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="exchangeMain">
+        2
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".exchange .tab li").click(function(){
+      $(".exchange .tab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+      $(".exchange .exchangeMain").hide().eq($(this).index()).show();
+      });
+    });
+    </script>
+    </div>
+</body>
+</html>

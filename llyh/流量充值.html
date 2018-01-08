@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量充值</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="index.html" onclick="javascript :history.back(-1);"></a>
+        流量充值
+    </div>
+    <div class="recharge">
+      <input class="phone-num font30" type="tel" placeholder="输入手机号码">
+      <div class="range">
+        <a class="cur font30" href="javascript:;">100<span class="font22">MB</span></a>
+        <a class="font30" href="javascript:;">500<span class="font22">MB</span></a>
+        <a class="font30" href="javascript:;">1024<span class="font22">MB</span></a>
+      </div>
+      <script type="text/javascript">
+        $('.range').children('a').click(function() {
+          $(this).addClass('cur').siblings('a').removeClass('cur');
+        });
+      </script>
+      <div class="clearfix"></div>
+      <div class="check font30">是否使用优惠券</div>
+      <div class="mask"></div>
+      <div class="checkMain">
+        <ul>
+          <li class="font30"><i></i>50MB流量券</li>
+          <li class="font30"><i></i>60MB流量券</li>
+          <li class="font30"><i></i>80MB流量券</li>
+          <li class="font30"><i></i>100MB流量券</li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('.check').click(function() {
+          $('.mask').css('display', 'block');
+          $('.checkMain').css('display', 'block');
+        });
+        $('.checkMain ul li').click(function() {
+          $('.mask').css('display', 'none');
+          $('.checkMain').css('display', 'none');
+          $('.check').html('已使用：'+$(this).html());
+        });
+        $('.mask').click(function() {
+          $('.mask').css('display', 'none');
+          $('.checkMain').css('display', 'none');
+        });
+      </script>
+      <p class="tips">选择您需要的流量，您目前可提取流量3MB</p>
+      <a class="btn font32" href="./images/temp/提取提示.html">立即提取</a>
+    </div>
+  </div>
+</body>
+</html>

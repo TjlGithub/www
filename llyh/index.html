@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量银行</title>
+</head>
+<body style="overflow-y:hidden;">
+  <div class="container">
+    <div class="index">
+      <!-- <div class="title font34">
+        首页
+      </div> -->
+      <div class="index-main">
+        <a class="index-icon-tl" href="流量充值.html"></a>
+        <a class="index-icon-tr" href="扫码.html"></a>
+        <div class="flow-ball">
+          <div class="container">
+            <!-- <div class="wave-one" style="transform: rotate(722.2deg);"></div> -->
+            <div class="wave-two" style="transform: rotate(811.25deg);"></div>
+            <div class="wave-three" style="transform: rotate(-884.15deg);"></div>
+          </div>
+          <script>
+            // var waveOneinc = 0;
+            var waveTwoinc = 25;
+            var waveThreeinc = 35;
+            setInterval(function(){
+              // $('.wave-one').css('transform', 'rotate('+waveOneinc+'deg)');
+              // waveOneinc+=1.15;
+              waveTwoinc+=1.25;
+              waveThreeinc+=1.35;
+              $('.wave-two').css('transform', 'rotate('+waveTwoinc+'deg)');
+             $('.wave-three').css('transform', 'rotate(-'+waveThreeinc+'deg)');
+           }, 30);
+          </script>
+          <span class="font32">当前总流量</span>
+          <i class="font56">2000MB</i>
+        </div>
+        <a href="流量明细.html">
+          <div class="info">
+            <ul>
+              <li>
+                <span class="font20">月收入流量</span>
+                <p class="font48">1000<span class="font20">MB</span></p>
+                <div class="line"></div>
+              </li>
+              <li>
+                <span class="font20">月支出流量</span>
+                <p class="font48">800<span class="font20">MB</span></p>
+                <div class="line"></div>
+              </li>
+              <li>
+                <span class="font20">流量宝累计收益</span>
+                <p class="font48">500<span class="font20">MB</span></p>
+                <div class="line"></div>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="icons">
+        <ul>
+          <li>
+            <a href="流量红包.html">
+              <i class="icon2"></i>
+              <span class="font24">红包</span>
+            </a>
+          </li>
+          <li>
+            <a href="签到.html">
+              <i class="icon1"></i>
+              <span class="font24">签到</span>
+            </a>
+          </li>
+          <li>
+            <a href="任务.html">
+              <i class="icon3"></i>
+              <span class="font24">任务</span>
+            </a>
+          </li>
+          <li>
+            <a href="./images/temp/运动.html">
+              <i class="icon4"></i>
+              <span class="font24">运动</span>
+            </a>
+          </li>
+          <li>
+            <a href="./images/temp/公益.html">
+              <i class="icon5"></i>
+              <span class="font24">公益</span>
+            </a>
+          </li>
+          <li>
+            <a href="兑换特权.html">
+              <i class="icon6"></i>
+              <span class="font24">特权</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="block"></div>
+      <div class="task font28">
+        <a href="javascript:;">任务赚流量</a>
+      </div>
+      <div class="taskList">
+        <ul>
+            <li>
+              <a class="font30" href="javascript:;">
+                <img src="images/task-pic01.jpg" alt="">
+                <span>世界杯足球冲刺赛</span>
+              </a>
+              <a class="like font20" href="javascript:;"><i></i>4321</a>
+            </li>
+            <li>
+              <a class="font30" href="javascript:;">
+                <img src="images/task-pic02.jpg" alt="">
+                <span>2018世界杯 竞猜流量嗨不停</span>
+              </a>
+              <a class="like font20" href="javascript:;"><i></i>2365</a>
+            </li>
+            <li>
+              <a class="font30" href="javascript:;">
+                <img src="images/task-pic03.jpg" alt="">
+                <span>消费赚流量</span>
+              </a>
+              <a class="like font20" href="javascript:;"><i></i>2365</a>
+            </li>
+        </ul>
+      </div>
+      <div class="block"></div>
+      <div class="index-bottom bottom-fixed">
+        <ul>
+          <li class="index-b-icon1">
+            <a class="cur" href="index.html">
+              <i></i>
+              <span>首页</span>
+            </a>
+          </li>
+          <li class="index-b-icon2">
+            <a href="赚流量.html">
+              <i></i>
+              <span>赚流量</span>
+            </a>
+          </li>
+          <li class="index-b-icon3">
+            <a href="花流量.html">
+              <i></i>
+              <span>花流量</span>
+            </a>
+          </li>
+          <li class="index-b-icon4">
+            <a href="个人中心.html">
+              <i></i>
+              <span>个人中心</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

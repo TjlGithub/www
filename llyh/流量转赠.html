@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="./js/jquery.range.js" charset="utf-8"></script>
+  <script>
+  $(function(){
+  	$('.single-slider').jRange({
+  		from: 0,
+  		to: 100,
+  		step: 1,
+  		scale: [0,25,50,75,100],
+  		format: '%s',
+  		showLabels: true,
+  		showScale: true
+  	});
+  });
+</script>
+  <title>流量转赠</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
+        流量转赠
+    </div>
+    <div class="paymentCode transfer">
+      <!-- <input class="font28" type="number" placeholder="输入手机号码"> -->
+      <div class="block"></div>
+      <div class="progress">
+    		<input type="hidden" class="single-slider" value="23" />
+    	</div>
+      <p class="font30">赠送流量</p>
+      <span class="font72">MB</span>
+      <i class="font22">请选择您需要的流量，您目前可提取流量3MB</i>
+      <a class="btn font32" href="流量转赠-分享.html">立即转赠</a>
+    </div>
+  </div>
+</body>
+</html>

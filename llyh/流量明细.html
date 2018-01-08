@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量明细</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
+        流量明细
+    </div>
+    <div class="flow-detail">
+      <ul class="tab clearfix">
+        <li class="cur font26">全部</li>
+        <li class="font26">收入</li>
+        <li class="font26">支出</li>
+      </ul>
+      <div class="flow-detailMain on">
+        <ul>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">流量充值</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">转赠流量</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flow-detailMain">
+        <ul>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="收入明细.html">
+              <p class="font34">流量宝收益</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34">+100MB</em>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flow-detailMain">
+        <ul>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">流量充值</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">转赠流量</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">流量充值</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">流量充值</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+          <li>
+            <a href="支出明细.html">
+              <p class="font34">转赠流量</p>
+              <span class="font26">2017.03.08 17:56:00</span>
+              <em class="font34 minus">-100MB</em>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".flow-detail .tab li").click(function(){
+    $(".flow-detail .tab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+    $(".flow-detail .flow-detailMain").hide().eq($(this).index()).show();
+    });
+  });
+  </script>
+</body>
+</html>

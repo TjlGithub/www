@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="./js/swiper.js" charset="utf-8"></script>
+  <title>流量商城</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+      <div class="searchNow font34">
+        <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
+        流量商城
+        <a class="search" href="javascript:;"></a>
+      </div>
+      <script type="text/javascript">
+        $('.search').click(function() {
+          $('.search-main').css('display', 'block');
+          $('.searchNow').css('display', 'none');
+        });
+      </script>
+      <div class="search-main">
+        <input class="font26" type="text" name="" value="" placeholder="输入搜索">
+        <a class="btn" href="javascript:;"></a>
+      </div>
+    </div>
+    <div class="mall">
+      <div class="nav">
+        <a class="font36 cur" href="javascript:;">所有</a>
+        <a class="font36" href="javascript:;">数码</a>
+        <a class="font36" href="javascript:;">电器</a>
+        <a class="font36" href="javascript:;">食品</a>
+        <a class="font36" href="javascript:;">更多</a>
+      </div>
+      <div class="banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:;">
+                <img src="images/mall-banner.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;">
+                <img src="images/mall-banner.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;">
+                <img src="images/mall-banner.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="javascript:;">
+            <img src="images/goods.jpg" alt="">
+            <span class="font30">智能手环</span>
+            <em class="font26">1900MB</em>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="images/goods2.jpg" alt="">
+            <span class="font30">智能剃须刀</span>
+            <em class="font26">2030MB</em>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="images/goods3.jpg" alt="">
+            <span class="font30">空气风扇</span>
+            <em class="font26">9900MB</em>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="images/goods4.jpg" alt="">
+            <span class="font30">体重秤</span>
+            <em class="font26">1900MB</em>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

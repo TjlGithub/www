@@ -108,7 +108,7 @@ div{
 /* index */
 .index{ position: relative;}
 .index-bg{ width: 10rem; height: 100vh; background: url(../images/index-bg.jpg) no-repeat; background-size: 100% 100%;}
-.index .index-btn1{ position: absolute; top:34.5vh; left: .68rem;}
+.index .index-btn1{ position: absolute; margin-top: 62%; left: .68rem;}
 .index .index-btn1 img,.index .index-btn2 img{ width: 2.4667rem; height: .8267rem; }
 .index .index-btn2{ position: absolute; top:6.16rem; right: 1.0267rem;}
 .index .room{ margin-left: .44rem; padding-top: 7.2133rem;}

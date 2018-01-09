@@ -107,7 +107,7 @@ div{
 
 /* index */
 .index{ position: relative;}
-.index-bg{ width: 100vw; height: 100vh; background: url(../images/index-bg.jpg) no-repeat; background-size: 100% 100%;}
+.index-bg{ width: 10rem; height: 100vh; background: url(../images/index-bg.jpg) no-repeat; background-size: 100% 100%;}
 .index .index-btn1{ position: absolute; top:6.16rem; left: .68rem;}
 .index .index-btn1 img,.index .index-btn2 img{ width: 2.4667rem; height: .8267rem; }
 .index .index-btn2{ position: absolute; top:6.16rem; right: 1.0267rem;}
@@ -145,7 +145,7 @@ div{
 /* 角色 */
 .role{ position: relative;}
 .role-bg{ width: 10rem; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: 100% 100%;}
-.role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 82vh; left: 2.4933rem;}
+.role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 76vh; left: 2.4933rem;}
 .role-btn img{width: 5.3067rem; height: 1.68rem; }
 .role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 34vh; left: 0;}
 .role .swiper-slide { text-align: center;

@@ -782,4 +782,31 @@ div{
 
 
 
+/*提取成功提示*/
+.extract-success{ width: 10rem; height: 5.1733rem; background: url(../images/extract-success.jpg) no-repeat; margin-top: 4.2667rem; background-size: 10rem; 5.1733rem; padding-top: 2.5rem;}
+.extract-success p{ color: #666; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* END */

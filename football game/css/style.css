@@ -144,8 +144,8 @@ div{
 
 /* 角色 */
 .role{ position: relative;}
-.role-bg{ width: 10rem; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: cover;}
-.role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 13.4533rem; left: 2.4933rem;}
+.role-bg{ width: 10rem; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: 100% 100%;}
+.role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 76vh; left: 2.4933rem;}
 .role-btn img{width: 5.3067rem; height: 1.68rem; }
 .role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 4.76rem; left: 0;}
 .role .swiper-slide { text-align: center;

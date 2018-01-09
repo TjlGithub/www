@@ -64,6 +64,16 @@
       <span class="line2"></span>
       <a class="btn30" href="javascript:;"></a>
     </div>
+    <div class="cue">
+      <div class="mask"></div>
+      <div class="cue-model">
+        <p class="font44">温馨提示</p>
+        <span class="font40">确认要支付30M流量吗？</span>
+        <em class="font26">*每天有10次机会，选取后不能修改角色</em>
+        <a class="btn-confirm" href="javascript:;"></a>
+        <a class="btn-close" href="javascript:;"></a>
+      </div>
+    </div>
     <script type="text/javascript">
       $('.btn50').click(function() {
         $(this).addClass('btn50-2');
@@ -73,9 +83,71 @@
         $(this).addClass('btn100-2');
         $(this).next('.line2').addClass('line1');
       });
+      // $('.button a').click(function() {
+      //   $('.cue').css('display', 'block');
+      // });
+      $('.cue .btn-confirm').click(function() {
+        $('.cue').css('display', 'none');
+      });
+      $('.cue .btn-close').click(function() {
+        $('.cue').css('display', 'none');
+      });
     </script>
+
+
+    <!--创建-->
+    <div class="establish">
+      <div class="mask"></div>
+      <div class="establish-main yqfsy">
+        <a class="btn-invitation" href="javascript:;"></a><!--去邀请-->
+        <a class="btn-back" href="index.html"></a><!--返回大厅-->
+      </div>
+    </div>
+
+<!--
+    <div class="success">
+      <div class="mask"></div>
+      <div class="success-main">
+        <a class="btnMore" href="javascript:;"></a>
+        <a class="btnShare" href="javascript:;"></a>
+      </div>
+    </div> -->
+
+
+    <div class="invitation-arrow"></div>
+
+
   </div>
   <script type="text/javascript">
+    $('.gong-left-btn').click(function() {
+      $('.cue').fadeIn();
+      $(this).addClass('gong-left-btn2');
+      // $('.gong-right-btn').css('display', 'none');
+      $('.right-arrow').css('display', 'none');
+    });
+    $('.btn-confirm').click(function() {
+      $('.cue').css('display', 'none');
+      $('.establish').fadeIn();
+      });
+    $('.btn-invitation').click(function() {
+      $('.invitation-arrow').fadeIn();
+    });
+
+    $('.gong-right-btn').click(function() {
+      $('.cue').fadeIn();
+      $(this).addClass('gong-right-btn2');
+      // $('.gong-left-btn').css('display', 'none');
+      $('.left-arrow').css('display', 'none');
+    });
+    $('.btn-confirm').click(function() {
+      $('.cue').css('display', 'none');
+      $('.establish').fadeIn();
+      });
+    $('.btn-invitation').click(function() {
+      $('.invitation-arrow').fadeIn();
+    });
+  </script>
+  <!-- <script type="text/javascript">
     $('.gong-left-btn').click(function() {
       // setTimeout(function(){settime()},1000)
       settime();
@@ -87,16 +159,21 @@
       $('.arrow').css('display', 'none');
       $('.keeper').css('display', 'none');
       $('.keeper-right').css('display', 'block');
+      $('.success').delay(4500).fadeIn();
     });
     $('.gong-right-btn').click(function() {
       settime();
+      $(this).addClass('gong-right-btn2');
+      $('.gong-left-btn').css('visibility', 'hidden');
       $('.ball1').css('display', 'none');
       $('.time').css('display', 'block');
       $('.ball3').css('display', 'block');
       $('.arrow').css('display', 'none');
       $('.keeper').css('display', 'none');
       $('.keeper-left').css('display', 'block');
+      $('.success').delay(4500).fadeIn();
     });
-  </script>
+  </script> -->
+
 </body>
 </html>

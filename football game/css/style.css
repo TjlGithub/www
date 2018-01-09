@@ -91,6 +91,15 @@ div{
 [data-dpr="3"] .font40{
   font-size: 60px;
 }
+.font44{
+  font-size: 22px;
+}
+[data-dpr="2"] .font44{
+  font-size: 44px;
+}
+[data-dpr="3"] .font44{
+  font-size: 66px;
+}
 
 .font200{
   font-size: 100px;
@@ -108,10 +117,10 @@ div{
 /* index */
 .index{ position: relative;}
 .index-bg{ width: 10rem; height: 100vh; background: url(../images/index-bg.jpg) no-repeat; background-size: 100% 100%;}
-.index .index-btn1{ position: absolute; margin-top: 62%; left: .68rem;}
+.index .index-btn1{ position: absolute; margin-top: 61%; left: .68rem;}
 .index .index-btn1 img,.index .index-btn2 img{ width: 2.4667rem; height: .8267rem; }
-.index .index-btn2{ position: absolute; top:6.16rem; right: 1.0267rem;}
-.index .room{ margin-left: .44rem; padding-top: 7.2133rem;}
+.index .index-btn2{ position: absolute; margin-top:61%; right: 1.0267rem;}
+.index .room{ margin-left: .44rem; padding-top: 72%;}
 .index .room ul li{ float: left;}
 .index .room ul li a{ display: block; position: relative; width: 2.7067rem; height: 2.9467rem; background: url(../images/index-roombg.jpg) no-repeat; background-size: 2.7067rem 2.68rem; color: #fff; margin: .0933rem .1467rem;}
 .index .room ul li a.holdDoor{ background: url(../images/index-roombg2.jpg) no-repeat; background-size: 2.7067rem 2.68rem; color: #fff; margin: .0933rem .1467rem;}
@@ -147,7 +156,7 @@ div{
 .role-bg{ width: 10rem; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: 100% 100%;}
 .role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 82vh; left: 2.4933rem;}
 .role-btn img{width: 5.3067rem; height: 1.68rem; }
-.role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 30vh; left: 0;}
+.role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 72vh; left: 0; margin-top: -6.8rem;}
 .role .swiper-slide { text-align: center;
   /* Center slide text vertically */
   display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;  -webkit-box-pack: center; -ms-flex-pack: center;  -webkit-justify-content: center;
@@ -162,22 +171,23 @@ div{
 
 /*攻方*/
 .gong{ position: relative;}
-.gong-bg{ width: 100vw; height: 100vh; background: url(../images/gong-bg.jpg) no-repeat; background-size: 100% 100%;}
-.gong .avatar{ width: 3.0933rem ;height: 1.0667rem; line-height: 1.0667rem; vertical-align: middle; background:url(../images/gong-avatar-bg.png) no-repeat; background-size: 2.72rem 1.0667rem; position: absolute;top: .8267rem; left: 1rem; color: #fff;}
+.gong-bg{ width: 10rem; height: 100vh; background: url(../images/gong-bg.jpg) no-repeat; background-size: 100% 100%;}
+.gong .avatar{ width: 3.0933rem ;height: 1.0667rem; line-height: 1.0667rem; vertical-align: middle; background:url(../images/gong-avatar-bg.png) no-repeat; background-size: 2.72rem 1.0667rem; position: absolute; top: .8267rem; left: 1rem; color: #fff;}
 .gong .avatar .left{display: inline-block; width: 1.0667rem; height: 1.0667rem; border-radius: 50%; margin-left: -.50333rem; background: #fff; z-index: 98}
 .gong .avatar .left img{ width: 1.0667rem; height: 1.0667rem; border-radius: 50%; opacity: 1; z-index: 99;}
 .gong .avatar em{ position: absolute; top: 0; margin-left: .13rem;}
-.gong .Surplus{ width: 3.0267rem; height: .72rem; line-height: .6667rem; background: url(../images/gong-surplus.jpg) no-repeat; background-size: 3.0267rem .72rem; position: absolute; top: 3rem; left: 3.56rem; text-align: center; color: #fff;}
+.gong .Surplus{ width: 3.0267rem; height: .72rem; line-height: .6667rem; background: url(../images/gong-surplus.jpg) no-repeat; background-size: 3.0267rem .72rem; position: absolute; top: 20vh; left: 3.56rem; text-align: center; color: #fff;}
 
-.gong .gong-left-btn{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 14rem; left: .76rem; background: url(../images/gong-left-btn.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
-.gong .gong-left-btn2{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 14rem; left: .76rem; background: url(../images/gong-left-btn2.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
-.gong .gong-right-btn{width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 14rem; right: 1.3333rem; background: url(../images/gong-right-btn.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.gong .gong-left-btn{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 89vh; left: .76rem; background: url(../images/gong-left-btn.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.gong .gong-left-btn2{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 89vh; left: .76rem; background: url(../images/gong-left-btn2.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.gong .gong-right-btn{width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 89vh; right: 1.3333rem; background: url(../images/gong-right-btn.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.gong .gong-right-btn2{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 89vh; right: 1.3333rem; background: url(../images/gong-right-btn2.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
 .gong .left-arrow,.gong .right-arrow{ width: 1.56rem; height: 1.7467rem; position: absolute;}
 .gong .left-arrow img,.gong .right-arrow img{width: 1.56rem; height: 1.7467rem;}
-.gong .left-arrow{top: 10.82rem; left: 1.52rem;}
-.gong .right-arrow{ top: 10.82rem; right: 1.52rem;}
-.gong .ball-mask{ width: 3.16rem; height: .88rem; position: absolute; top:12rem; left: 3.3733rem; }
-.gong .ball{ position: absolute; top: 10rem; left: 3.8667rem; width: 2.3333rem; height: 2.3333rem; animation: zhuan 3s linear infinite;}
+.gong .left-arrow{top: 68vh; left: 1.52rem;}
+.gong .right-arrow{ top: 68vh; right: 1.52rem;}
+.gong .ball-mask{ width: 3.16rem; height: .88rem; position: absolute; top:75vh; left: 3.3733rem; }
+.gong .ball{ position: absolute; top: 64vh; left: 3.8667rem; width: 2.3333rem; height: 2.3333rem; animation: zhuan 3s linear infinite;}
 @keyframes zhuan {
   0%{transform: rotate(0deg);}
   100%{ transform: rotate(360deg);}
@@ -185,7 +195,7 @@ div{
 .gong .ball1{ display: block;}
 
 .gong .ball2{ display: none;}
-.gong .ball2 img{position: absolute; top: 10rem; left: 3.8667rem; width: 2.3333rem; height: 2.3333rem; }
+.gong .ball2 img{position: absolute; top: 64vh; left: 3.8667rem; width: 2.3333rem; height: 2.3333rem; }
 .gong .ball2shoot{ animation: leftshoot 1s 3s ease-in-out forwards;}
 @keyframes leftshoot {
   0%{top: 10rem; left: 3.8667rem; }
@@ -193,7 +203,7 @@ div{
 }
 
 .gong .ball3{ display: none;}
-.gong .ball3 img{position: absolute; top: 10rem; right: 3.8667rem; width: 2.3333rem; height: 2.3333rem; }
+.gong .ball3 img{position: absolute; top: 64vh; right: 3.8667rem; width: 2.3333rem; height: 2.3333rem; }
 .gong .ball3shoot{ animation: rightshoot 1s 3s ease-in-out forwards;}
 @keyframes rightshoot {
   0%{top: 10rem; right: 3.8667rem; }
@@ -201,7 +211,7 @@ div{
 }
 
 
-.gong .keeper{ width: 3.3067rem; height: 3.7867rem; background: url(../images/gong-keeper.png) no-repeat; background-size: 3.3067rem 3.7867rem; position: absolute; top: 4.64rem; left: 3.2533rem; animation: keeper 4s linear infinite;}
+.gong .keeper{ width: 3.3067rem; height: 3.7867rem; background: url(../images/gong-keeper.png) no-repeat; background-size: 3.3067rem 3.7867rem; position: absolute; top: 30vh; left: 3.2533rem; animation: keeper 4s linear infinite;}
 @keyframes keeper {
   0%{ transform: translate(0);}
   25%{transform: translate(-.8rem);}
@@ -213,21 +223,21 @@ div{
 }
 
 
-.gong .keeper-left{ display: none; width: 3.3067rem; height: 3.7867rem; background: url(../images/gong-keeper.png) no-repeat; background-size: 3.3067rem 3.7867rem; position: absolute; top: 4.64rem; left: 3.2533rem; animation: keeper-left 1s 3s ease-in-out forwards;}
+.gong .keeper-left{ display: none; width: 3.3067rem; height: 3.7867rem; background: url(../images/gong-keeper.png) no-repeat; background-size: 3.3067rem 3.7867rem; position: absolute; top: 30vh; left: 3.2533rem; animation: keeper-left 1s 3s ease-in-out forwards;}
 @keyframes keeper-left {
-  0%{top: 4.64rem; left: 3.2533rem;}
-  100%{top: 4.64rem; left: 2.2533rem;}
+  0%{top: 30vh; left: 3.2533rem;}
+  100%{top: 30vh; left: 2.2533rem;}
 }
-.gong .keeper-right{display: none; width: 3.3067rem; height: 3.7867rem; background: url(../images/gong-keeper2.png) no-repeat; background-size: 3.3067rem 3.7867rem; position: absolute; top: 4.64rem; right: 3.2533rem; animation: keeper-right 1s 3s ease-in-out forwards;}
+.gong .keeper-right{display: none; width: 3.3067rem; height: 3.7867rem; background: url(../images/gong-keeper2.png) no-repeat; background-size: 3.3067rem 3.7867rem; position: absolute; top: 30vh; right: 3.2533rem; animation: keeper-right 1s 3s ease-in-out forwards;}
 @keyframes keeper-right {
-  0%{top: 4.64rem; right: 3.2533rem;}
-  100%{top: 4.64rem; right: 2.2533rem;}
+  0%{top: 30vh; right: 3.2533rem;}
+  100%{top: 30vh; right: 2.2533rem;}
 }
 
 .gong .time{ width: 100vw; height: 100vh;  opacity: .8; z-index: 999; display: none;}
 .gong .time p{ color: #fff; text-align: center; padding-top: 50%;}
 
-.gong .button{ position: absolute; top: 2.96rem; right: .4rem;}
+.gong .button{ position: absolute; top: 19vh; right: .4rem;}
 .gong .button a{ display: block; width: .9867rem; height: 1.0133rem;}
 .gong .button .btn100{ background: url(../images/100m.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
 .gong .button .btn100-2{ background: url(../images/100m2.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
@@ -236,6 +246,159 @@ div{
 .gong .button .btn30{ background: url(../images/30m.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
 .gong .button .line2{display: block; width: .2933rem; height: 1.28rem; background: url(../images/gong-line2.jpg) no-repeat; background-size: .2933rem 1.28rem; margin:-.42rem .32rem; z-index: 998; position: relative;}
 .gong .button .line1{ display: block; width: .2933rem; height: 1.28rem; background: url(../images/gong-line1.jpg) no-repeat; background-size: .2933rem 1.28rem; margin:-.42rem .32rem; z-index: 998; position: relative;}
+
+.gong .cue{ display: none;}
+.gong .cue .mask{ width: 100vw; height: 100vh; background: #000; opacity: .5; z-index: 1000; position: relative;}
+.gong .cue .cue-model{ width: 10rem; height: 7.24rem; background: url(../images/gong-cue.png) no-repeat; background-size: 10rem 7.24rem; position: absolute; top: 25%; z-index: 1001; text-align: left; color: #d75714;}
+.gong .cue .cue-model p{ text-align: center; font-weight: bold; padding-top: 2.1rem;}
+.gong .cue .cue-model span{display: block; width: 80%; margin: 0 auto; text-align: center; margin-top: .16rem;}
+.gong .cue .cue-model em{display: block; width: 80%; margin: 0 auto; text-align: center; margin-top: .16rem;}
+.gong .cue .cue-model .btn-confirm{ display: block; width: 3.6rem; height: 1.2267rem; position: absolute; top: 4.9rem; left: 3rem;}
+.gong .cue .cue-model .btn-close{ display: block; width: .92rem; height: .92rem; position: absolute; right: 1.58rem; top: 0;}
+
+
+
+
+
+/*守方*/
+.shou{ position: relative;}
+.shou-bg{ width: 10rem; height: 100vh; background: url(../images/shou-bg.jpg) no-repeat; background-size: 100% 100%;}
+.shou .avatar{ width: 3.0933rem ;height: 1.0667rem; line-height: 1.0667rem; vertical-align: middle; background:url(../images/gong-avatar-bg.png) no-repeat; background-size: 2.72rem 1.0667rem; position: absolute; top: .8267rem; left: 1rem; color: #fff;}
+.shou .avatar .left{display: inline-block; width: 1.0667rem; height: 1.0667rem; border-radius: 50%; margin-left: -.50333rem; background: #fff; z-index: 98}
+.shou .avatar .left img{ width: 1.0667rem; height: 1.0667rem; border-radius: 50%; opacity: 1; z-index: 99;}
+.shou .avatar em{ position: absolute; top: 0; margin-left: .13rem;}
+.shou .Surplus{ width: 3.0267rem; height: .72rem; line-height: .6667rem; background: url(../images/gong-surplus.jpg) no-repeat; background-size: 3.0267rem .72rem; position: absolute; top: 18vh; left: 3.56rem; text-align: center; color: #fff;}
+
+.shou .shou-left-btn{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 88vh; left: .76rem; background: url(../images/gong-left-btn.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.shou .shou-left-btn2{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 88vh; left: .76rem; background: url(../images/gong-left-btn2.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.shou .shou-right-btn{width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 88vh; right: 1.3333rem; background: url(../images/gong-right-btn.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+.shou .shou-right-btn2{ width: 3.4133rem; height: 1.1733rem; display: block; position: absolute; top: 88vh; right: 1.3333rem; background: url(../images/gong-right-btn2.png) no-repeat; background-size: 3.4133rem 1.1733rem;}
+
+.shou .time{ width: 100vw; height: 100vh;  opacity: .8; z-index: 999; display: none;}
+.shou .time p{ color: #fff; text-align: center; padding-top: 50%;}
+
+.shou .button{ position: absolute; top: 19vh; right: .4rem;}
+.shou .button a{ display: block; width: .9867rem; height: 1.0133rem;}
+.shou .button .btn100{ background: url(../images/100m.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
+.shou .button .btn100-2{ background: url(../images/100m2.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
+.shou .button .btn50{ background: url(../images/50m.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
+.shou .button .btn50-2{ background: url(../images/50m2.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
+.shou .button .btn30{ background: url(../images/30m.png) no-repeat; background-size: .9867rem 1.0133rem; z-index: 999; position: relative;}
+.shou .button .line2{display: block; width: .2933rem; height: 1.28rem; background: url(../images/gong-line2.jpg) no-repeat; background-size: .2933rem 1.28rem; margin:-.42rem .32rem; z-index: 998; position: relative;}
+.shou .button .line1{ display: block; width: .2933rem; height: 1.28rem; background: url(../images/gong-line1.jpg) no-repeat; background-size: .2933rem 1.28rem; margin:-.42rem .32rem; z-index: 998; position: relative;}
+
+.shou .cue{ display: none;}
+.shou .cue .mask{ width: 100vw; height: 100vh; background: #000; opacity: .5; z-index: 1000; position: relative;}
+.shou .cue .cue-model{ width: 10rem; height: 7.24rem; background: url(../images/gong-cue.png) no-repeat; background-size: 10rem 7.24rem; position: absolute; top: 25%; z-index: 1001; text-align: left; color: #d75714;}
+.shou .cue .cue-model p{ text-align: center; font-weight: bold; padding-top: 2.1rem;}
+.shou .cue .cue-model span{display: block; width: 80%; margin: 0 auto; text-align: center; margin-top: .16rem;}
+.shou .cue .cue-model em{display: block; width: 80%; margin: 0 auto; text-align: center; margin-top: .16rem;}
+.shou .cue .cue-model .btn-confirm{ display: block; width: 3.6rem; height: 1.2267rem; position: absolute; top: 4.9rem; left: 3rem;}
+.shou .cue .cue-model .btn-close{ display: block; width: .92rem; height: .92rem; position: absolute; right: 1.58rem; top: 0;}
+
+.shou .shootplayer{ width: 2.28rem; height: 3.4667rem; position: absolute; top: 25.3vh; left: 4.68rem;}
+
+
+.shou .keeper{ width: 2.6933rem; height: 3.68rem; background: url(../images/shou-keep1.png) no-repeat; background-size: 2.6933rem 3.68rem; position: absolute; top: 64vh; left: 3.6rem; animation: shou-keeper 4s linear infinite;}
+@keyframes shou-keeper {
+  0%{ transform: translate(0);}
+  25%{transform: translate(-.8rem);}
+  50%{transform: translate(0);background:url(../images/shou-keep1.png) no-repeat; background-size: 2.6933rem 3.68rem;}
+  51%{background:url(../images/shou-keep2.png) no-repeat; background-size: 2.6933rem 3.68rem;}
+  75%{transform: translate(.8rem);}
+  99%{transform: translate(0);background:url(../images/shou-keep2.png) no-repeat; background-size: 2.6933rem 3.68rem;}
+  100%{background:url(../images/shou-keep1.png) no-repeat; background-size: 2.6933rem 3.68rem;}
+}
+
+
+.shou .keeper-left{ display: none; width: 2.6933rem; height: 3.68rem; background: url(../images/shou-keep1.png) no-repeat; background-size: 2.6933rem 3.68rem; position: absolute; top: 64vh; left: 3.6rem; animation: shou-keeper-left 1s 3s ease-in-out forwards;}
+@keyframes shou-keeper-left {
+  0%{top: 64vh; left: 3.6rem;}
+  100%{top: 64vh; left: 2.2533rem;}
+}
+.shou .keeper-right{display: none; width: 2.6933rem; height: 3.68rem; background: url(../images/shou-keep2.png) no-repeat; background-size: 2.6933rem 3.68rem; position: absolute; top: 64vh; right: 3.6rem; animation: shou-keeper-right 1s 3s ease-in-out forwards;}
+@keyframes shou-keeper-right {
+  0%{top: 64vh; right: 3.6rem;}
+  100%{top: 64vh; right: 2.2533rem;}
+}
+
+
+.shou .keeper-lefthand{ width: 3.0667rem; height: 3.48rem; background: url(../images/shou-lefthand.png) no-repeat; background-size: 3.0667rem 3.48rem; position: absolute; top: 65vh; left: -1.2rem;}
+.shou .keeper-lefthandOn{ display: none;  width: 3.0667rem; height: 3.48rem; background: url(../images/shou-lefthand.png) no-repeat; background-size: 3.0667rem 3.48rem; position: absolute; top: 65vh; left: -1.2rem; animation: shou-lefthand 1s 3s linear forwards;}
+@keyframes shou-lefthand {
+  0%{ transform: translate(0);margin-top: 0;}
+  100%{transform: translate(.45rem);margin-top: -.2667rem;}
+}
+
+
+.shou .keeper-righthand{ width: 3.0667rem; height: 3.48rem; background: url(../images/shou-righthand.png) no-repeat; background-size: 3.0667rem 3.48rem; position: absolute; top: 65vh; right: -1.2rem; }
+.shou .keeper-righthandOn{ display: none; width: 3.0667rem; height: 3.48rem; background: url(../images/shou-righthand.png) no-repeat; background-size: 3.0667rem 3.48rem; position: absolute; top: 65vh; right: -1.2rem; animation: shou-righthand 1s 3s linear forwards;}
+@keyframes shou-righthand {
+  0%{transform: translate(0);margin-top: 0;}
+  100%{transform: translate(-.45rem);margin-top: -.2667rem;}
+
+}
+
+
+
+.shou .ballmask{ width: 1.64rem; height: .3867rem;position: absolute; top: 44vh; left: 4.0667rem;}
+.shou .ball{ width: 1.2133rem; height: 1.2133rem;}
+.shou .ball1{ width: 1.2133rem; height: 1.2133rem; position: absolute; top: 37vh; left: 4.3rem; animation: shou-ball 1s linear infinite;}
+@keyframes shou-ball {
+  0%{transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+
+.shou .ball1{ display: block;}
+
+.shou .ball2{ display: none;  width: 1.2133rem; height: 1.2133rem; position: absolute; top: 37vh; left: 4.3rem; }
+.shou .ball2 img{position: absolute; top: 37vh; left: 4.3rem; width: 1.2133rem; height: 1.2133rem; }
+.shou .ball2shoot{ animation: shou-leftshoot 1s 3s ease-in-out forwards;}
+@keyframes shou-leftshoot {
+  0%{top: 37vh; left: 4.3rem; }
+  100%{ top: 11.0667rem; left: 1.3333rem; width: 2rem; height: 2rem;}
+}
+
+.shou .ball3{ display: none; width: 1.2133rem; height: 1.2133rem; position: absolute; top: 37vh; right: 4.3rem; }
+.shou .ball3 img{position: absolute; top: 37vh; right: 4.3rem; width: 1.2133rem; height: 1.2133rem; }
+.shou .ball3shoot{ animation: shou-rightshoot 1s 3s ease-in-out forwards;}
+@keyframes shou-rightshoot {
+  0%{top: 37vh; right: right: 4.3rem; }
+  100%{ top: 11.0667rem; right: 1.3333rem; width: 2rem; height: 2rem;}
+}
+
+
+
+/*创建成功弹窗*/
+.success{ position: relative; display: none;}
+.success .mask{ width: 100vw; height: 100vh; background: #000; opacity: .8; z-index: 1001; position: relative;}
+.success-main{ width: 10rem; height: 10.9733rem; background: url(../images/success.png) no-repeat; background-size: 10rem 10.9733rem; position: absolute; top:16%; left: 0;z-index: 1003;}
+.success-main .btnMore{ width: 2.56rem; height: .78rem; display: block;  position: absolute; top: 8.9rem; left: 2.1rem;}
+.success-main .btnShare{ width: 2.56rem; height: .78rem; display: block; position: absolute; top: 8.9rem; right: 2.3rem;}
+
+
+
+
+/*创建游戏*/
+.establish{ position: relative; display: none;}
+.establish .mask{ width: 100vw; height: 100vh; background: #000; opacity: .5; z-index: 1001; position: relative;}
+.establish-main{ width: 10rem; height: 7.08rem; position: absolute; top:30%; left: 0;z-index: 1003;}
+.yqfsy{background: url(../images/yq-fsy.png) no-repeat; background-size: 10rem 7.08rem; }
+.yqdqy{background: url(../images/yq-dqy.png) no-repeat; background-size: 10rem 7.08rem; }
+.establish-main .btn-invitation{ display: block; width: 2.56rem; height: .8267rem; position: absolute; top: 5.3rem; left: 2.3rem;}
+.establish-main .btn-back{ display: block; width: 2.6rem; height: .8267rem;  position: absolute; top: 5.3rem; right: 2.3rem;}
+
+
+
+.invitation-arrow{ width: 2.4933rem; height: 2.32rem; background: url(../images/invitation-arrow.png) no-repeat; background-size:2.4933rem 2.32rem; position: absolute; top: 0; right: 0; display: none; z-index: 1004; }
+
+
+
+
+
+
+
+
 
 
 

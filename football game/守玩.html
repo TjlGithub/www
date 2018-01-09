@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>2018世界杯攻守赛 守方</title>
+</head>
+<body class="shou-bg">
+  <div class="shou">
+    <div class="avatar font24">
+      <span class="left"><img src="images/gong-avatar.jpg" alt=""></span>
+      <em>10000流量</em>
+    </div>
+    <div class="Surplus font30">今日还剩余10次</div>
+    <a class="shou-left-btn" href="javascript:;"></a>
+    <a class="shou-right-btn" href="javascript:;"></a>
+
+    <img class="shootplayer" src="./images/shou-shootplayer.png" alt="">
+    <img class="ballmask" src="./images/shou-ballmask.png" alt="">
+    <img class="ball ball1" src="./images/shou-ball.png" alt="">
+    <img class="ball ball2 ball2shoot" src="./images/shou-ball.png" alt="">
+    <img class="ball ball3 ball3shoot" src="./images/shou-ball.png" alt="">
+
+    <div class="keeper"></div><!--守门员初始-->
+    <div class="keeper-left"></div><!--守门员向左扑球-->
+    <div class="keeper-right"></div><!--守门员向右扑球-->
+    <div class="keeper-lefthand"></div><!--守门员左手-->
+    <div class="keeper-righthand"></div><!--守门员右手-->
+    <div class="keeper-lefthandOn"></div><!--守门员左手-->
+    <div class="keeper-righthandOn"></div><!--守门员右手-->
+
+    <div class="time">
+      <p class="font200 timer"></p>
+    </div>
+    <script type="text/javascript">
+      var countdown=3;
+      function settime(val) {
+      if (countdown == 0) {
+      $('.time').css('display', 'none');
+      } else {
+        // $('.time').css('display', 'block');
+        $('.timer').html(countdown);
+      countdown--;
+      }
+      setTimeout(function() {
+      settime(val)
+      },1000)
+      }
+    </script>
+
+    <div class="button">
+      <a class="btn100" href="javascript:;"></a>
+      <span class="line2"></span>
+      <a class="btn50" href="javascript:;"></a>
+      <span class="line2"></span>
+      <a class="btn30" href="javascript:;"></a>
+    </div>
+    <div class="cue">
+      <div class="mask"></div>
+      <div class="cue-model">
+        <p class="font44">温馨提示</p>
+        <span class="font40">确认要支付30M流量吗？</span>
+        <em class="font26">*每天有10次机会，选取后不能修改角色</em>
+        <a class="btn-confirm" href="javascript:;"></a>
+        <a class="btn-close" href="javascript:;"></a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.btn50').click(function() {
+        $(this).addClass('btn50-2');
+        $(this).next('.line2').addClass('line1');
+      });
+      $('.btn100').click(function() {
+        $(this).addClass('btn100-2');
+        $(this).next('.line2').addClass('line1');
+      });
+      $('.button a').click(function() {
+        $('.cue').css('display', 'block');
+      });
+      $('.cue .btn-confirm').click(function() {
+        $('.cue').css('display', 'none');
+      });
+      $('.cue .btn-close').click(function() {
+        $('.cue').css('display', 'none');
+      });
+    </script>
+
+    <!--创建-->
+    <div class="establish">
+      <div class="mask"></div>
+      <div class="establish-main yqdqy">
+        <a class="btn-invitation" href="javascript:;"></a><!--去邀请-->
+        <a class="btn-back" href="index.html"></a><!--返回大厅-->
+      </div>
+    </div>
+
+
+
+    <div class="success">
+      <div class="mask"></div>
+      <div class="success-main">
+        <a class="btnMore" href="index.html"></a><!--再来一次-->
+        <a class="btnShare" href="javascript:;"></a><!--我要分享-->
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    $('.shou-left-btn').click(function() {
+      // setTimeout(function(){settime()},1000)
+      settime();
+      $(this).addClass('shou-left-btn2');
+      // $('.shou-right-btn').css('display', 'none');
+      $('.ball1').css('display', 'none');
+      $('.time').css('display', 'block');
+      $('.ball2').css('display', 'block');
+      $('.keeper').css('display', 'none');
+      $('.keeper-left').css('display', 'block');
+      $('.keeper-lefthand').css('display', 'none');
+      $('.keeper-lefthandOn').css('display', 'block');
+      $('.success').delay(4500).fadeIn();
+    });
+    $('.shou-right-btn').click(function() {
+      settime();
+      $(this).addClass('shou-right-btn2');
+      // $('.shou-left-btn').css('display', 'none');
+      $('.ball1').css('display', 'none');
+      $('.time').css('display', 'block');
+      $('.ball3').css('display', 'block');
+      $('.keeper').css('display', 'none');
+      $('.keeper-right').css('display', 'block');
+      $('.keeper-righthand').css('display', 'none');
+      $('.keeper-righthandOn').css('display', 'block');
+      $('.success').delay(4500).fadeIn();
+    });
+  </script>
+</body>
+</html>

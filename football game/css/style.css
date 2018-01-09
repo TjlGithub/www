@@ -179,7 +179,7 @@ div{
 
 .gong .ball2{ display: none;}
 .gong .ball2 img{position: absolute; top: 10rem; left: 3.8667rem; width: 2.3333rem; height: 2.3333rem; }
-.gong .ball2shoot{ animation: leftshoot 2s 3s ease-in-out forwards;}
+.gong .ball2shoot{ animation: leftshoot 1s 3s ease-in-out forwards;}
 @keyframes leftshoot {
   0%{top: 10rem; left: 3.8667rem; }
   100%{ top: 5.6rem; left: 2.4rem; width: .6267rem; height: .64rem;}
@@ -187,7 +187,7 @@ div{
 
 .gong .ball3{ display: none;}
 .gong .ball3 img{position: absolute; top: 10rem; right: 3.8667rem; width: 2.3333rem; height: 2.3333rem; }
-.gong .ball3shoot{ animation: rightshoot 2s 3s ease-in-out forwards;}
+.gong .ball3shoot{ animation: rightshoot 1s 3s ease-in-out forwards;}
 @keyframes rightshoot {
   0%{top: 10rem; right: 3.8667rem; }
   100%{ top: 5.6rem; right: 2.4rem; width: .6267rem; height: .64rem;}

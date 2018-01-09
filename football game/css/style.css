@@ -135,9 +135,9 @@ div{
 .index .index-bottom a img{width: 3.33333333rem; height: 1.2rem; }
 
 
-/* index */
+/* 角色 */
 .role{ position: relative;}
-.role-bg{ width: 100vw; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: 100% 100%;}
+.role-bg{ width: 10rem; height: 17.7867rem; background: url(../images/role-bg.jpg) no-repeat; background-size: 10rem 17.7867rem;}
 .role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 13.4533rem; left: 2.4933rem;}
 .role-btn img{width: 5.3067rem; height: 1.68rem; }
 .role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 4.76rem; left: 0;}

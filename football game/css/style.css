@@ -107,8 +107,8 @@ div{
 
 /* index */
 .index{ position: relative;}
-.index-bg{ width: 100vw; height: 100vh; background: url(../images/index-bg.jpg) no-repeat; background-size: 100% 100%;}
-.index .index-btn1{ position: absolute; top:6.16rem; left: .68rem;}
+.index-bg{ width: 10rem; height: 100vh; background: url(../images/index-bg.jpg) no-repeat; background-size: 100% 100%;}
+.index .index-btn1{ position: absolute; margin-top: 62%; left: .68rem;}
 .index .index-btn1 img,.index .index-btn2 img{ width: 2.4667rem; height: .8267rem; }
 .index .index-btn2{ position: absolute; top:6.16rem; right: 1.0267rem;}
 .index .room{ margin-left: .44rem; padding-top: 7.2133rem;}
@@ -124,23 +124,30 @@ div{
   0%{transform: scale(.5);  }
   100%{ transform: scale(2); transform: translate(.4rem);}
 }
-.index .index-hold{ width: 1.2667rem; height: 1.4933rem; position: absolute; top: .18rem; right: .4rem; animation: hold 1s infinite;}
+.index .index-hold{ width: 1.2667rem; height: 1.4933rem; position: absolute; top: .18rem; right: .4rem; animation: hold 2s linear infinite;}
 @keyframes hold {
-  0%{transform: rotate(-15deg); transform-origin: bottom;}
-  100%{ transform: rotate(5deg); transform-origin: bottom;}
+  0%{transform: rotate(0deg); transform-origin: bottom;}
+  25%{transform: rotate(-5deg); transform-origin: bottom;}
+  50%{transform: rotate(0deg); transform-origin: bottom;}
+  75%{transform: rotate(5deg); transform-origin: bottom;}
+  100%{ transform: rotate(0deg); transform-origin: bottom;}
 }
-.index .index-ball2{ width: .5333rem; height: .5333rem; position: absolute; top: .8rem; right: 1.6rem;}
+.index .index-ball2{ width: .5333rem; height: .5333rem; position: absolute; top: .8rem; right: 1.6rem; animation: ball2 2s linear infinite; }
+@keyframes ball2 {
+  0%{ transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
 .index .index-bottom{ width: 10rem; height: 1.2rem; position: fixed; bottom: 0; left: 0;}
 .index .index-bottom a{ display: block;float: left;}
 .index .index-bottom a img{width: 3.33333333rem; height: 1.2rem; }
 
 
-/* index */
+/* 角色 */
 .role{ position: relative;}
-.role-bg{ width: 100vw; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: 100% 100%;}
-.role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 13.4533rem; left: 2.4933rem;}
+.role-bg{ width: 10rem; height: 100vh; background: url(../images/role-bg.jpg) no-repeat; background-size: 100% 100%;}
+.role-btn{ display: block; width: 5.3067rem; height: 1.68rem; position: absolute; top: 82vh; left: 2.4933rem;}
 .role-btn img{width: 5.3067rem; height: 1.68rem; }
-.role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 4.76rem; left: 0;}
+.role .swiper-container { width: 10rem; height: 6.4267rem; position: absolute; top: 30vh; left: 0;}
 .role .swiper-slide { text-align: center;
   /* Center slide text vertically */
   display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;  -webkit-box-pack: center; -ms-flex-pack: center;  -webkit-justify-content: center;

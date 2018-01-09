@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/swiper.css">
   <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
   <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
   <title>2018世界杯攻守赛 选角色</title>
 </head>
 <body class="role-bg">
@@ -17,7 +18,7 @@
     <!-- Swiper -->
      <div class="swiper-container">
        <div class="swiper-wrapper">
-         <div class="swiper-slide">
+         <div class="swiper-slide btn-check">
            <img src="images/role-shoot.png" alt="">
          </div>
          <div class="swiper-slide">
@@ -25,8 +26,8 @@
          </div>
        </div>
        <!-- Add Arrows -->
-       <div class="swiper-button-next"></div>
-       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next swiper-button"></div>
+       <div class="swiper-button-prev swiper-button"></div>
      </div>
 
      <!-- Swiper JS -->
@@ -41,9 +42,18 @@
          },
        });
      </script>
-    <a class="role-btn" href="javascript:;">
+    <a class="role-btn" href="http://wwww.baidu.com">
       <img src="images/role-btn.png" alt="">
     </a>
   </div>
+  <script type="text/javascript">
+    $('.swiper-button').click(function() {
+      if ($('.btn-check').hasClass('swiper-slide-active')) {
+        $('.role-btn').attr('href', 'http://wwww.baidu.com');
+      } else {
+        $('.role-btn').attr('href', 'https://www.hao123.com');
+      }
+    });
+  </script>
 </body>
 </html>

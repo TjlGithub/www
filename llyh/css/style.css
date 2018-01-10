@@ -439,7 +439,7 @@ div{
 .redPacket-share .share-icon .icon1{ background-position: -3.44rem -4.5467rem;}
 .redPacket-share .share-icon .icon2{ background-position: -5.04rem -4.5467rem;}
 .redPacket-share .share-icon .icon3{ background-position: -6.64rem -4.5467rem;}
-
+.redPacket-share .mb{display: block; width: 10rem; text-align: center; font-weight: bold; color: #fff; position: absolute; top: 7.2rem; left: 0;}
 
 
 

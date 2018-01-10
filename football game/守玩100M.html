@@ -10,7 +10,7 @@
   <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
   <script src="./js/flexible.debug.js" charset="utf-8"></script>
   <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
-  <title>2018世界杯攻守赛 守方</title>
+  <title>2018世界杯攻守赛 守门员</title>
 </head>
 <body class="shou-bg">
   <div class="shou">
@@ -56,30 +56,65 @@
     </script>
 
     <div class="button">
-      <a class="btn100" href="javascript:;"></a>
-      <span class="line2"></span>
-      <a class="btn50" href="javascript:;"></a>
-      <span class="line2"></span>
+      <a class="btn100 btn100-2" href="javascript:;"></a>
+      <span class="line2 line1"></span>
+      <a class="btn50 btn50-2" href="javascript:;"></a>
+      <span class="line2 line1"></span>
       <a class="btn30" href="javascript:;"></a>
     </div>
-    <div class="cue">
+    <!-- <div class="cue">
       <div class="mask"></div>
       <div class="cue-model">
         <p class="font44">温馨提示</p>
-        <span class="font40">确认要支付30M流量吗？</span>
+        <span class="font40 mb">确认要支付30M流量吗？</span>
         <em class="font26">*每天有10次机会，选取后不能修改角色</em>
         <a class="btn-confirm" href="javascript:;"></a>
         <a class="btn-close" href="javascript:;"></a>
       </div>
-    </div>
-    <script type="text/javascript">
+    </div> -->
+    <!-- <script type="text/javascript">
+      $('.btn30').click(function() {
+        $('.mb').html('确认要支付30M流量吗？');
+        $('.take').html('30');
+        $('.btn50').removeClass('btn50-2');
+        $('.btn50').next('.line2').removeClass('line1');
+        $('.btn100').removeClass('btn100-2');
+        $('.btn100').next('.line2').removeClass('line1');
+        $('.cue .btn-close').click(function() {
+          $('.cue').css('display', 'none');
+          $('.btn50').removeClass('btn50-2');
+          $('.btn50').next('.line2').removeClass('line1');
+          $('.btn100').removeClass('btn100-2');
+          $('.btn100').next('.line2').removeClass('line1');
+        });
+      });
       $('.btn50').click(function() {
         $(this).addClass('btn50-2');
         $(this).next('.line2').addClass('line1');
+        $('.mb').html('确认要支付50M流量吗？');
+        $('.take').html('50');
+        $('.btn100').removeClass('btn100-2');
+        $('.btn100').next('.line2').removeClass('line1');
+        $('.cue .btn-close').click(function() {
+          $('.cue').css('display', 'none');
+          $('.btn50').removeClass('btn50-2');
+          $('.btn50').next('.line2').removeClass('line1');
+        });
       });
       $('.btn100').click(function() {
         $(this).addClass('btn100-2');
         $(this).next('.line2').addClass('line1');
+        $('.btn50').addClass('btn50-2');
+        $('.btn50').next('.line2').addClass('line1');
+        $('.mb').html('确认要支付100M流量吗？');
+        $('.take').html('100');
+        $('.cue .btn-close').click(function() {
+          $('.cue').css('display', 'none');
+          $('.btn50').removeClass('btn50-2');
+          $('.btn50').next('.line2').removeClass('line1');
+          $('.btn100').removeClass('btn100-2');
+          $('.btn100').next('.line2').removeClass('line1');
+        });
       });
       $('.button a').click(function() {
         $('.cue').css('display', 'block');
@@ -90,26 +125,49 @@
       $('.cue .btn-close').click(function() {
         $('.cue').css('display', 'none');
       });
-    </script>
+    </script> -->
 
     <!--创建-->
-    <div class="establish">
+    <!-- <div class="establish">
       <div class="mask"></div>
       <div class="establish-main yqdqy">
-        <a class="btn-invitation" href="javascript:;"></a><!--去邀请-->
-        <a class="btn-back" href="index.html"></a><!--返回大厅-->
+        <a class="btn-invitation" href="javascript:;"></a>
+        <a class="btn-back" href="index.html"></a>
       </div>
-    </div>
+    </div> -->
 
 
 
     <div class="success">
       <div class="mask"></div>
       <div class="success-main">
+        <p class="font42">彪悍的人生不需要解释，<br>
+        <span class="take">100</span>兆流量请拿走</p>
         <a class="btnMore" href="index.html"></a><!--再来一次-->
         <a class="btnShare" href="javascript:;"></a><!--我要分享-->
       </div>
     </div>
+
+
+
+    <div class="success-share">
+      <!-- <div class="mask"></div> -->
+      <div class="success-share-main">
+        <p class="font28">xxx在<span>防守员</span>活动中获得<span class="take">100</span><span>M</span>流量</p>
+        <a class="success-share-btn" href="javascript:;"></a>
+      </div>
+    </div>
+    <div class="invitation-arrow"></div>
+    <script type="text/javascript">
+      $('.btnShare').click(function() {
+        $('.success-share').css('display', 'block');
+        $('.success').css('display', 'none');
+      });
+      $('.success-share-btn').click(function() {
+        $('.invitation-arrow').css('display', 'block');
+      });
+    </script>
+
 
   </div>
   <script type="text/javascript">

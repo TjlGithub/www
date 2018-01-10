@@ -10,34 +10,32 @@
   <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
   <script src="./js/flexible.debug.js" charset="utf-8"></script>
   <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
-  <title>2018世界杯攻守赛 攻方</title>
+  <title>2018世界杯攻守赛 守门员</title>
 </head>
-<body class="gong-bg">
-  <div class="gong">
+<body class="shou-bg">
+  <div class="shou">
     <div class="avatar font24">
       <span class="left"><img src="images/gong-avatar.jpg" alt=""></span>
       <em>10000流量</em>
     </div>
     <div class="Surplus font30">今日还剩余10次</div>
-    <a class="gong-left-btn" href="javascript:;"></a>
-    <a class="gong-right-btn" href="javascript:;"></a>
-    <div class="arrow">
-      <span class="left-arrow"><img src="images/gong-left-arrow.png" alt=""></span>
-      <span class="right-arrow"><img src="images/gong-right-arrow.png" alt=""></span>
-    </div>
+    <a class="shou-left-btn" href="javascript:;"></a>
+    <a class="shou-right-btn" href="javascript:;"></a>
+
+    <img class="shootplayer" src="./images/shou-shootplayer.png" alt="">
+    <img class="ballmask" src="./images/shou-ballmask.png" alt="">
+    <img class="ball ball1" src="./images/shou-ball.png" alt="">
+    <img class="ball ball2 ball2shoot" src="./images/shou-ball.png" alt="">
+    <img class="ball ball3 ball3shoot" src="./images/shou-ball.png" alt="">
+
     <div class="keeper"></div><!--守门员初始-->
     <div class="keeper-left"></div><!--守门员向左扑球-->
     <div class="keeper-right"></div><!--守门员向右扑球-->
-    <div class="ball1"><!--球初始状态-->
-      <img class="ball-mask" src="images/gong-ball-mask.png" alt="">
-      <img class="ball" src="images/gong-ball.png" alt="">
-    </div>
-    <div class="ball2"><!--球往左射门-->
-      <img class="ball2shoot" src="images/gong-ball.png" alt="">
-    </div>
-    <div class="ball3"><!--球往右射门-->
-      <img class=" ball3shoot" src="images/gong-ball.png" alt="">
-    </div>
+    <div class="keeper-lefthand"></div><!--守门员左手-->
+    <div class="keeper-righthand"></div><!--守门员右手-->
+    <div class="keeper-lefthandOn"></div><!--守门员左手-->
+    <div class="keeper-righthandOn"></div><!--守门员右手-->
+
     <div class="time">
       <p class="font200 timer"></p>
     </div>
@@ -64,7 +62,7 @@
       <span class="line2"></span>
       <a class="btn30" href="javascript:;"></a>
     </div>
-    <div class="cue">
+    <!-- <div class="cue">
       <div class="mask"></div>
       <div class="cue-model">
         <p class="font44">温馨提示</p>
@@ -73,21 +71,35 @@
         <a class="btn-confirm" href="javascript:;"></a>
         <a class="btn-close" href="javascript:;"></a>
       </div>
-    </div>
-    <script type="text/javascript">
+    </div> -->
+    <!-- <script type="text/javascript">
       $('.btn30').click(function() {
         $('.mb').html('确认要支付30M流量吗？');
+        $('.take').html('30');
         $('.btn50').removeClass('btn50-2');
         $('.btn50').next('.line2').removeClass('line1');
         $('.btn100').removeClass('btn100-2');
         $('.btn100').next('.line2').removeClass('line1');
+        $('.cue .btn-close').click(function() {
+          $('.cue').css('display', 'none');
+          $('.btn50').removeClass('btn50-2');
+          $('.btn50').next('.line2').removeClass('line1');
+          $('.btn100').removeClass('btn100-2');
+          $('.btn100').next('.line2').removeClass('line1');
+        });
       });
       $('.btn50').click(function() {
         $(this).addClass('btn50-2');
         $(this).next('.line2').addClass('line1');
         $('.mb').html('确认要支付50M流量吗？');
+        $('.take').html('50');
         $('.btn100').removeClass('btn100-2');
         $('.btn100').next('.line2').removeClass('line1');
+        $('.cue .btn-close').click(function() {
+          $('.cue').css('display', 'none');
+          $('.btn50').removeClass('btn50-2');
+          $('.btn50').next('.line2').removeClass('line1');
+        });
       });
       $('.btn100').click(function() {
         $(this).addClass('btn100-2');
@@ -95,104 +107,97 @@
         $('.btn50').addClass('btn50-2');
         $('.btn50').next('.line2').addClass('line1');
         $('.mb').html('确认要支付100M流量吗？');
+        $('.take').html('100');
+        $('.cue .btn-close').click(function() {
+          $('.cue').css('display', 'none');
+          $('.btn50').removeClass('btn50-2');
+          $('.btn50').next('.line2').removeClass('line1');
+          $('.btn100').removeClass('btn100-2');
+          $('.btn100').next('.line2').removeClass('line1');
+        });
       });
-      // $('.button a').click(function() {
-      //   $('.cue').css('display', 'block');
-      // });
+      $('.button a').click(function() {
+        $('.cue').css('display', 'block');
+      });
       $('.cue .btn-confirm').click(function() {
         $('.cue').css('display', 'none');
       });
       $('.cue .btn-close').click(function() {
         $('.cue').css('display', 'none');
       });
-    </script>
-
+    </script> -->
 
     <!--创建-->
-    <div class="establish">
+    <!-- <div class="establish">
       <div class="mask"></div>
-      <div class="establish-main yqfsy">
-        <a class="btn-invitation" href="javascript:;"></a><!--去邀请-->
-        <a class="btn-back" href="index.html"></a><!--返回大厅-->
-      </div>
-    </div>
-
-<!--
-    <div class="success">
-      <div class="mask"></div>
-      <div class="success-main">
-        <a class="btnMore" href="javascript:;"></a>
-        <a class="btnShare" href="javascript:;"></a>
+      <div class="establish-main yqdqy">
+        <a class="btn-invitation" href="javascript:;"></a>
+        <a class="btn-back" href="index.html"></a>
       </div>
     </div> -->
 
 
+
+    <div class="success">
+      <div class="mask"></div>
+      <div class="success-main">
+        <p class="font42">彪悍的人生不需要解释，<br>
+        <span class="take">30</span>兆流量请拿走</p>
+        <a class="btnMore" href="index.html"></a><!--再来一次-->
+        <a class="btnShare" href="javascript:;"></a><!--我要分享-->
+      </div>
+    </div>
+
+
+
+    <div class="success-share">
+      <!-- <div class="mask"></div> -->
+      <div class="success-share-main">
+        <p class="font28">xxx在<span>防守员</span>活动中获得<span class="take">30</span><span>M</span>流量</p>
+        <a class="success-share-btn" href="javascript:;"></a>
+      </div>
+    </div>
     <div class="invitation-arrow"></div>
+    <script type="text/javascript">
+      $('.btnShare').click(function() {
+        $('.success-share').css('display', 'block');
+        $('.success').css('display', 'none');
+      });
+      $('.success-share-btn').click(function() {
+        $('.invitation-arrow').css('display', 'block');
+      });
+    </script>
 
 
   </div>
   <script type="text/javascript">
-    $('.gong-left-btn').click(function() {
-      $('.cue').fadeIn();
-      $(this).addClass('gong-left-btn2');
-      // $('.gong-right-btn').css('display', 'none');
-      $('.right-arrow').css('display', 'none');
-    });
-    $('.btn-confirm').click(function() {
-      $('.cue').css('display', 'none');
-      $('.establish').fadeIn();
-      });
-    $('.btn-invitation').click(function() {
-      $('.invitation-arrow').fadeIn();
-    });
-
-    $('.gong-right-btn').click(function() {
-      $('.cue').fadeIn();
-      $(this).addClass('gong-right-btn2');
-      // $('.gong-left-btn').css('display', 'none');
-      $('.left-arrow').css('display', 'none');
-    });
-    $('.btn-confirm').click(function() {
-      $('.cue').css('display', 'none');
-      $('.establish').fadeIn();
-      });
-    $('.btn-invitation').click(function() {
-      $('.invitation-arrow').fadeIn();
-    });
-    $('.btn-close').click(function() {
-      $('.gong-left-btn').removeClass('gong-left-btn2');
-      $('.gong-right-btn').removeClass('gong-right-btn2');
-      $('.left-arrow').css('display', 'block');
-      $('.right-arrow').css('display', 'block');
-    });
-  </script>
-  <!-- <script type="text/javascript">
-    $('.gong-left-btn').click(function() {
+    $('.shou-left-btn').click(function() {
       // setTimeout(function(){settime()},1000)
       settime();
-      $(this).addClass('gong-left-btn2');
-      $('.gong-right-btn').css('display', 'none');
+      $(this).addClass('shou-left-btn2');
+      // $('.shou-right-btn').css('display', 'none');
       $('.ball1').css('display', 'none');
       $('.time').css('display', 'block');
       $('.ball2').css('display', 'block');
-      $('.arrow').css('display', 'none');
       $('.keeper').css('display', 'none');
-      $('.keeper-right').css('display', 'block');
+      $('.keeper-left').css('display', 'block');
+      $('.keeper-lefthand').css('display', 'none');
+      $('.keeper-lefthandOn').css('display', 'block');
       $('.success').delay(4500).fadeIn();
     });
-    $('.gong-right-btn').click(function() {
+    $('.shou-right-btn').click(function() {
       settime();
-      $(this).addClass('gong-right-btn2');
-      $('.gong-left-btn').css('visibility', 'hidden');
+      $(this).addClass('shou-right-btn2');
+      // $('.shou-left-btn').css('display', 'none');
       $('.ball1').css('display', 'none');
       $('.time').css('display', 'block');
       $('.ball3').css('display', 'block');
-      $('.arrow').css('display', 'none');
       $('.keeper').css('display', 'none');
-      $('.keeper-left').css('display', 'block');
+      $('.keeper-right').css('display', 'block');
+      $('.keeper-righthand').css('display', 'none');
+      $('.keeper-righthandOn').css('display', 'block');
       $('.success').delay(4500).fadeIn();
     });
-  </script> -->
-
+  </script>
 </body>
 </html>

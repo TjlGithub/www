@@ -91,6 +91,15 @@ div{
 [data-dpr="3"] .font40{
   font-size: 60px;
 }
+.font42{
+  font-size: 21px;
+}
+[data-dpr="2"] .font42{
+  font-size: 42px;
+}
+[data-dpr="3"] .font42{
+  font-size: 63px;
+}
 .font44{
   font-size: 22px;
 }
@@ -120,7 +129,7 @@ div{
 .index .index-btn1{ position: absolute; margin-top: 61%; left: .68rem;}
 .index .index-btn1 img,.index .index-btn2 img{ width: 2.4667rem; height: .8267rem; }
 .index .index-btn2{ position: absolute; margin-top:61%; right: 1.0267rem;}
-.index .room{ margin-left: .44rem; padding-top: 72%;}
+.index .room{ margin-left: .44rem; padding-top: 72%; margin-bottom: 1.2rem;}
 .index .room ul li{ float: left;}
 .index .room ul li a{ display: block; position: relative; width: 2.7067rem; height: 2.9467rem; background: url(../images/index-roombg.jpg) no-repeat; background-size: 2.7067rem 2.68rem; color: #fff; margin: .0933rem .1467rem;}
 .index .room ul li a.holdDoor{ background: url(../images/index-roombg2.jpg) no-repeat; background-size: 2.7067rem 2.68rem; color: #fff; margin: .0933rem .1467rem;}
@@ -146,9 +155,9 @@ div{
   0%{ transform: rotate(0deg);}
   100%{ transform: rotate(360deg);}
 }
-.index .index-bottom{ width: 10rem; height: 1.2rem; position: fixed; bottom: 0; left: 0;}
-.index .index-bottom a{ display: block;float: left;}
-.index .index-bottom a img{width: 3.33333333rem; height: 1.2rem; }
+.index-bottom{ width: 10rem; height: 1.2rem; position: fixed; bottom: 0; left: 0;}
+.index-bottom a{ display: block;float: left;}
+.index-bottom a img{width: 3.33333333rem; height: 1.2rem; }
 
 
 /* 角色 */
@@ -370,11 +379,24 @@ div{
 
 
 /*创建成功弹窗*/
-.success{ position: relative; display: none;}
+.success{ position: relative; display: none;  z-index: 1001;}
 .success .mask{ width: 100vw; height: 100vh; background: #000; opacity: .8; z-index: 1001; position: relative;}
 .success-main{ width: 10rem; height: 10.9733rem; background: url(../images/success.png) no-repeat; background-size: 10rem 10.9733rem; position: absolute; top:16%; left: 0;z-index: 1003;}
 .success-main .btnMore{ width: 2.56rem; height: .78rem; display: block;  position: absolute; top: 8.9rem; left: 2.1rem;}
 .success-main .btnShare{ width: 2.56rem; height: .78rem; display: block; position: absolute; top: 8.9rem; right: 2.3rem;}
+.success p{width: 100%; text-align: center; color: #ffdf6e; position: absolute; top: 5.3333rem;}
+
+
+
+/*挑战成功 我要分享*/
+.success-share{ position: relative; z-index: 1006; display: none;}
+/* .success-share .mask{ width: 100vw; height: 100vh; background: #000; opacity: .8; z-index: 1001; position: relative;} */
+.shou .success-share .success-share-main{ width: 100vw; height: 100vh; background: url(../images/keeper-share.jpg) no-repeat; background-size: cover; }
+.gong .success-share .success-share-main{ width: 100vw; height: 100vh; background: url(../images/shooter-share.jpg) no-repeat; background-size: cover; }
+.shou .success-share .success-share-main p{ width: 100%; text-align: center; color: #3e3e3e; padding-top: 60%; text-indent: .48rem;}
+.gong .success-share .success-share-main p{ width: 100%; text-align: center; color: #3e3e3e; padding-top: 59%; text-indent: 1.2rem;}
+.success-share .success-share-main p span{ color: #ff0000;}
+.success-share .success-share-btn{ width: 5.6933rem; height: 1.7867rem; display: block; position: absolute; left: 2.2rem; bottom: 1.1333rem; background: url(../images/success-share-btn.png) no-repeat; background-size: 5.6933rem 1.7867rem; }
 
 
 
@@ -390,14 +412,65 @@ div{
 
 
 
-.invitation-arrow{ width: 2.4933rem; height: 2.32rem; background: url(../images/invitation-arrow.png) no-repeat; background-size:2.4933rem 2.32rem; position: absolute; top: 0; right: 0; display: none; z-index: 1004; }
+.invitation-arrow{ width: 2.4933rem; height: 2.32rem; background: url(../images/invitation-arrow.png) no-repeat; background-size:2.4933rem 2.32rem; position: absolute; top: .2667rem; right: 1rem; display: none; z-index: 1009; animation: arrow 1s infinite;}
+@keyframes arrow {
+  0%{opacity: 1;}
+  50%{opacity: 1;}
+  100%{ opacity: 0;}
+}
 
 
 
+/* 活动规则 */
+.rules-bg{ width: 10rem; height: 100vh; background: url(../images/gong-bg.jpg) no-repeat; background-size: 100% 100%;}
+.rules{ position: relative;}
+.rules .rules-main{ width: 10rem; height: 10.7333rem; position: absolute; top: 15vh; left: 0; background: url(../images/rules-bg.png) no-repeat; background-size: 10rem 10.7333rem;}
+.rules .close{ width: .9333rem; height: .9333rem; position: absolute;top: .0267rem; right: 1.1067rem;}
+.rules .rules-main .rules-detail{ width: 6.5867rem; height: 6.7467rem; position: absolute; top: 3.4933rem; left: 1.76rem; overflow: hidden; overflow-y: scroll; color: #383838; line-height: .4533rem;;}
+.rules .rules-main .rules-detail span{ background: #05a7f1; padding: .0667rem .2rem; color: #fff; line-height: .5333rem;}
 
 
 
+/*我的*/
+.mine-bg{ width: 10rem; height: 100vh; background: url(../images/mine-bg.jpg) #6003ac no-repeat; background-size: 100% 7.9733rem;}
+.mine{ position: relative;}
+.mine .pkList{ width: 10rem; height: 10.68rem;  background: url(../images/mine-pkbg.png)  no-repeat; background-size:10rem 10.68rem; position: absolute; top: 3.4rem; left: 0;  margin-bottom: 1.2rem;}
+.mine .pkList ul{ width: 7.92rem; height: 8rem; overflow-x: hidden; overflow-y: scroll; margin: 0 auto; position: absolute; top: 2.4rem; left: 1.2rem;}
+.mine .pkList ul li{ width: 7.92rem; height: 1.76rem; background: url(../images/mine-pkli.png) no-repeat; background-size: 7.92rem 1.76rem; position: relative;}
+.mine .pkList ul li .pkPlayer{ width: .7867rem; height: .7867rem; background: url(../images/pk-player.jpg) no-repeat; background-size: .7867rem 3.1733rem; border-radius: 50%;}
+.mine .pkList ul li .leftPlayer{ width: 2.4rem; position: absolute; top: .12rem; left:.6533rem;}
+.mine .pkList ul li .leftPlayer .leftPlayer-win{background-position: 0 0;}
+.mine .pkList ul li .leftPlayer .leftPlayer-lose{ background-position: 0 -.7867rem;}
 
+.mine .pkList ul li .rightPlayer{ width: 2.4rem; position: absolute;top: .12rem; left: 6.2267rem;}
+.mine .pkList ul li .rightPlayer .rightPlayer-win{background-position: 0 -1.5733rem;}
+.mine .pkList ul li .rightPlayer .rightPlayer-lose{ background-position: 0 -2.36rem;}
+
+.mine .pkList ul li .middleMB{width: 3.12rem; position: absolute; top: 1.04rem; left: 3.5rem; color: #ff0707;}
+
+.mine .pkList ul li .leftPlayer .win,.mine .pkList ul li .rightPlayer .win{ color: #b25b00; margin-left: .12rem; line-height: .6rem;}
+.mine .pkList ul li .leftPlayer .lose,.mine .pkList ul li .rightPlayer .lose{ color: #8b8b8b;margin-left: .12rem; line-height: .6rem;}
+.mine .btn-ranking{ width: 2.0267rem; height: .6667rem; display: block; position: absolute; top: 4.7rem; right: .24rem; z-index: 9999;}
+
+
+
+/*一周排行榜*/
+.weekRanking{ width: 10rem; height: 10.68rem;  background: url(../images/week.png)  no-repeat; background-size:10rem 10.68rem; position: absolute; top: 3.77rem; left: 0; margin-bottom: 1.2rem;}
+.weekRanking table{ width:8.3733rem; margin:2rem auto 0 auto;}
+.weekRanking table th,.weekRanking table td { width: 8.3733rem; height: .74rem; line-height: .74rem; text-align: center;}
+ .weekRanking table th,.weekRanking table td{ border:solid 1px #bb6000}
+ .weekRanking table td{ position: relative;}
+ .weekRanking i{ width: .9333rem; height: .6rem; display: block; background: url(../images/ranking.png) no-repeat; background-size: .9333rem 6.6667rem; position: absolute; top: .08rem; left: .4rem;}
+ .weekRanking .num1st{background-position: 0 0;}
+ .weekRanking .num2nd{background-position: 0 -.6rem;}
+ .weekRanking .num3rd{background-position: 0 -1.2rem;}
+ .weekRanking .num4th{background-position: 0 -1.8rem;}
+ .weekRanking .num5th{background-position: 0 -2.4rem;}
+ .weekRanking .num6th{background-position: 0 -3rem;}
+ .weekRanking .num7th{background-position: 0 -3.6rem;}
+ .weekRanking .num8th{background-position: 0 -4.2rem;}
+ .weekRanking .num9th{background-position: 0 -4.8rem;}
+ .weekRanking .num10th{background-position: 0 -5.4rem;}
 
 
 

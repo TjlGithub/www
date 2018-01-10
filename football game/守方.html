@@ -66,20 +66,33 @@
       <div class="mask"></div>
       <div class="cue-model">
         <p class="font44">温馨提示</p>
-        <span class="font40">确认要支付30M流量吗？</span>
+        <span class="font40 mb">确认要支付30M流量吗？</span>
         <em class="font26">*每天有10次机会，选取后不能修改角色</em>
         <a class="btn-confirm" href="javascript:;"></a>
         <a class="btn-close" href="javascript:;"></a>
       </div>
     </div>
     <script type="text/javascript">
+    $('.btn30').click(function() {
+      $('.mb').html('确认要支付30M流量吗？');
+      $('.btn50').removeClass('btn50-2');
+      $('.btn50').next('.line2').removeClass('line1');
+      $('.btn100').removeClass('btn100-2');
+      $('.btn100').next('.line2').removeClass('line1');
+    });
       $('.btn50').click(function() {
         $(this).addClass('btn50-2');
         $(this).next('.line2').addClass('line1');
+        $('.mb').html('确认要支付50M流量吗？');
+        $('.btn100').removeClass('btn100-2');
+        $('.btn100').next('.line2').removeClass('line1');
       });
       $('.btn100').click(function() {
         $(this).addClass('btn100-2');
         $(this).next('.line2').addClass('line1');
+        $('.btn50').addClass('btn50-2');
+        $('.btn50').next('.line2').addClass('line1');
+        $('.mb').html('确认要支付100M流量吗？');
       });
       // $('.button a').click(function() {
       //   $('.cue').css('display', 'block');
@@ -142,6 +155,10 @@
       });
     $('.btn-invitation').click(function() {
       $('.invitation-arrow').fadeIn();
+    });
+    $('.btn-close').click(function() {
+      $('.shou-left-btn').removeClass('shou-left-btn2');
+      $('.shou-right-btn').removeClass('shou-right-btn2');
     });
   </script>
 

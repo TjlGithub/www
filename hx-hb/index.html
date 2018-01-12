@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>华夏银行信用卡</title>
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-2.1.4.js" charset="utf-8"></script>
+</head>
+<style>
+  *{ margin: 0; padding: 0;}
+  html { box-sizing: border-box; background: none;}
+  *,*:before, *:after { box-sizing: inherit;}
+  body{ font-family: Helvetica; text-align: left; color: #000; background: #ebebeb;}
+  .wrap{ width: 100%; height: 100%; position: relative;}
+  .main{ width: 10rem; height: calc(100vh - 1.4133rem); overflow: auto;  z-index:9; }
+
+  .pic1{ width: 10rem; height: 18.16rem; }
+  .pic2{width: 10rem; height: 8.1067rem;}
+  /* #pic2 img{ width: 10rem; height: 8.1067rem;} */
+  .block{ width: 10rem; height:1.4133rem;}
+  .bottom{ width: 10rem; height: 1.4133rem; background: url(./img/card-index-bottom1.jpg) no-repeat; background-size: 10rem 1.4133rem; position: fixed; left: 0; bottom: 0; z-index: 10;}
+  .menu-btn{ width: 2.8533rem; height: 1.36rem; display: block; position: absolute; right: 0; bottom: 0;}
+  .menu{ width: 5.0667rem; height: 6.1333rem; position: absolute; right: 0; top: 0; background:url(./img/menu.jpg) no-repeat; background-size: 5.0667rem 6.1333rem; margin-top: -6.1333rem; display: none; z-index: 20;}
+  .privilege-btn{ width: 5.0667rem; height: 1.1467rem; display: block; position: absolute; top:3.4933rem; left: 0;}
+
+</style>
+<body>
+  <div class="wrap">
+    <div id="main" class="main">
+      <img class="pic1" src="img/card-index01.jpg" alt="">
+    </div>
+    <div class="block"></div>
+    <div class="bottom">
+      <a class="menu-btn" href="javascript:;"></a>
+      <div id="menu" class="menu">
+        <a class="privilege-btn" href="javascript:;" onclick="add();">
+        </a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $('.menu-btn').on('touchstart',function(){
+        $('.menu').css('display', 'block');
+      });
+    </script>
+    <script type="text/javascript">
+      function add()
+      {
+      var div1 = document.getElementById('main');
+      var menu = document.getElementById('menu');
+      var pic2 = document.getElementById('pic2');
+      div1.innerHTML = div1.innerHTML + '<a href="./privilege.html"><img class="pic2" src="img/card-index02.jpg" alt=""></a>';
+      div1.scrollTop = div1.scrollHeight+'200';
+      menu.style.display='none';
+      }
+    </script>
+  </div>
+</body>
+</html>

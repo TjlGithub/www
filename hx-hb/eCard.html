@@ -1,0 +1,146 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="App_theme/default/css/icon/iconfont.css" />
+    <link rel="stylesheet" href="App_theme/default/css/style.css" />
+    <link href="css/animator.css" rel="stylesheet" />
+    <script src="./js/jquery-2.1.4.js" charset="utf-8"></script>
+    <script src="./js/fu.js" charset="utf-8"></script>
+    <title>华夏红包</title>
+</head>
+<body>
+
+
+    <!--弹出层-->
+    <div class="b-bj" id="bj"></div>
+    <div class="b-ts" id="b-ts">
+         <i class="icon iconfont an-close an-pb">&#xe656;</i>
+         <div class="b-tbt">领取成功</div>
+         <div class="b-tan">确定</div>
+     </div>
+    <!--弹出层-->
+
+    <div class="main" id="main">
+        <!--logo-->
+        <div class="logo">
+            <img src="img/logo.png" />
+        </div>
+
+        <!--页面标题-->
+        <div class="title" id="title">
+            <img src="img/title.png" />
+        </div>
+
+        <div class="hb" id="hb">
+
+            <!--动画-->
+
+
+            <!--动画-->
+            <div class="hb-top"><img src="img/hb-top.png" /></div>
+            <div class="hb-div"><img src="img/hb-c.png" /></div>
+            <div class="hb-bot"><img src="img/hb-bot.png" /></div>
+            <div class="hb-yin"><img src="img/hb-yin.png" /></div>
+            <!-- <div class="hb-logo"><img src="img/hb-logo.png" /></div> -->
+             <!-- <div class="hb-wzts">京东E卡 ¥30.00</div>
+             <div class="hb-price"><span>卡号：715F-8B8E-C222-5FAE</span></div> -->
+             <div class="card-price">京东E卡 ¥30.00</div>
+             <div class="card">卡密：715F-8B8E-C222-5FAE</div>
+        </div>
+
+
+        <div class="button">
+
+          <div class="main2">
+            <div class="item1">
+              <div class="kodai kodai2">
+                <img src="images/kd2.png" class="full" />
+                <img src="images/kd1.png" class="empty" />
+              </div>
+              <div class="clipped-box">
+
+              </div>
+            </div>
+            <p id="html"></p>
+          </div>
+
+          <div class="btn">
+            <div class="take"><img src="img/ling.png" alt=""></div>
+            <div class="d-yuan1"></div>
+            <div class="d-yuan2"></div>
+            <div class="d-yuan3"></div>
+            <div class="d-yuan4"></div>
+            <div class="d-yuan5"></div>
+            <div class="d-yuan6"></div>
+          </div>
+        </div>
+
+
+        <!-- <div class="popup">
+          <img src="images/popup.png" alt="">
+          <div class="card">卡密：715F-8B8E-C222-5FAE</div>
+        </div> -->
+
+
+        <!--领取流程-->
+        <div class="footer" id="footer">
+            <div class="lc">温馨提示：请至www.jd.com充值！</div>
+            <!-- <div class="hd">本活动由快礼物提供技术支持</div> -->
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    function $id(id) {
+        return document.getElementById(id);
+    }
+    var wid = window.innerWidth;
+    var hei = window.innerHeight;
+
+    if(hei<480){
+        hei=hei-30;
+    }
+
+    $id("main").style.height = hei + "px";
+    $id("main").style.width = wid + "px";
+
+    //0.4385 根据手机屏幕高宽之比换算值
+    var ipb=0.4385 / (wid / hei);
+
+    $id("title").style.width = ipb * 100 + "%";
+    $id("hb").style.width = ipb * 100 + "%";
+
+    //标题比例
+    bt = wid *ipb * 0.273;
+    //红包比例
+    yu = wid * ipb / 0.74;
+    //阴影比例
+    yin = wid * ipb * 0.12;
+    //位置比例
+    wz = $id("footer").offsetHeight;
+
+    $id("title").style.height = bt + "px";
+    yz = hei - bt - yu - yin - wz - 31;
+
+    $id("hb").style.marginTop = yz * 0.221+"px";
+    $id("footer").style.marginTop = yz * 0.206 + "px";
+    //背景图距离顶部的距离
+    var bj_ma = hei * 0.7439 - wid / 0.79;
+    if (bj_ma>0) {
+        bj_ma = 0;
+    }
+    $id("main").style.backgroundPositionY = bj_ma + "px";
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,466 @@
+﻿body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body{color:#333; font-size:12px;font-family:Helvetica Neue,Roboto,microsoft yahei}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+input{ font-size:12px;}
+a{ text-decoration:none; color:#000;}
+a:hover,a:visited{color:#c00; text-decoration:none;}
+.clear{clear:both;}
+
+.main {
+    background:#ed2149 url(../img/bj.png)  no-repeat;
+    background-size:100%;
+    min-width:320px;
+    min-height:480px;
+}
+.logo img {
+    width:157px;
+    margin-top:10px;
+    margin-left:10px;
+}
+.title {
+    width:75%;
+    text-align:center;
+    margin:0 auto;
+    margin-top:20px;
+    position:relative;
+}
+
+.title img,.hb-top img,.hb-bot img,.hb-div img,.hb-yin img {
+    width:100%;
+    margin:0 auto;
+}
+.title img {
+    position:absolute;
+    left:0;
+    /*-webkit-transform:translateY(-200px);*/
+    /* -webkit-animation:tt 1.5s ease 1; */
+}
+.hb {
+    width:75%;
+    margin:0 auto;
+    position:relative;
+    -webkit-animation:hb 2s ease 1;
+}
+.hb img {
+    vertical-align:top;
+}
+.hb-div {
+    background:#ff2d4b;
+    margin:0 auto;
+    margin-top: -3px;
+}
+.hb-logo img {
+    width:22%;
+}
+.hb-logo img{
+    position:absolute;
+    left:50%;
+    margin-left:-11%;
+    top:17%;
+    z-index:2;
+}
+.hb-price {
+    position:absolute;
+    left:50%;
+    margin-left:-4px;
+    color:#fffca2;
+    top:100px;
+    font-size:60px;
+    top:64%;
+    -webkit-transform:translate(-50%,-50%)
+}
+.hb-wzts {
+    position: absolute;
+    top: 80%;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    text-align: center;
+    color: #fffca2;
+}
+.hb-price span {
+    font-size:16px;
+}
+.footer {
+    text-align:center;
+    color:#fff;
+    line-height: 18px;
+}
+.lc {
+    font-size:13px;
+    color: #fffca2;
+/*    line-height: 15px;*/
+}
+.hd {
+    font-size:12px;
+/*    line-height: 12px;*/
+}
+/*动画 start*/
+.d-yuan1,.d-yuan2,.d-yuan3,.d-yuan4,.d-yuan5,.d-yuan6{
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #fff;
+    border-radius: 300px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -25%;
+    top: -2.735%;
+    opacity: 0;
+    }
+
+.d-yuan1 {
+    -webkit-animation:kuo 5s linear  infinite;
+}
+.d-yuan2 {
+    -webkit-animation:kuo 5s linear 1s  infinite;
+}
+.d-yuan3 {
+    -webkit-animation:kuo 5s linear 2s infinite;
+}
+.d-yuan4{
+    -webkit-animation:kuo 5s linear 3s infinite;
+}
+.d-yuan5{
+    -webkit-animation:kuo 5s linear 4s infinite;
+}
+
+
+
+.zh {
+    position:absolute;
+    top:0;
+}
+.x-yuan {
+	width: 70px;
+	height: 70px;
+	background: red;
+	border-radius: 70px;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	margin-left: -35px;
+	top: 50%;
+	margin-top: -35px;
+	opacity: 1;
+}
+.b-bj {
+    display:none;
+    background:#2a2b30;
+    opacity:0.5;
+    position:fixed;
+    z-index:10;
+    width:100%;
+    height:100%;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.an-close {
+    background: url(img/in-bt.png) right -574px no-repeat;
+    background-size: 100%;
+    top: 8px;
+    right: 8px;
+    margin: 0;
+    position:absolute;
+    font-size:24px;
+}
+.b-ts {
+    position: fixed;
+    width: 80%;
+    z-index: 300;
+    background: #fff;
+    left: 50%;
+    margin-left: -40%;
+    border-radius: 8px;
+    top: 50%;
+    font-family: 微软雅黑;
+    display: none;
+}
+.b-tbt {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.b-tan {
+    width: 77%;
+    height: 45px;
+    background: #00bf4f;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: #b1ebc9 0 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    margin: 40px auto 40px auto;
+    letter-spacing: 6px;
+}
+
+.show {
+    -webkit-animation:show 1s ease;
+}
+.hide {
+    -webkit-animation:hide 1s ease;
+}
+.jian {
+    -webkit-animation:jian 1s ease;
+}
+.yin {
+    -webkit-animation:yin 1s ease;
+}
+/*动画*/
+@-webkit-keyframes kuo{
+        from{
+            opacity:0.3;
+            -webkit-transform:scale(0);
+        }
+        to{
+            opacity:0;
+            -webkit-transform:scale(1);
+        }
+}
+@-webkit-keyframes tt{
+        from{
+            -webkit-transform:translateY(-200px);
+        }
+        to{
+            -webkit-transform:translateY(0px);
+        }
+}
+
+
+@-webkit-keyframes hb{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+
+}
+@-webkit-keyframes show {
+    0% {
+        -webkit-transform:scale(0);
+    }
+    100% {
+        -webkit-transform:scale(1);
+    }
+}
+@-webkit-keyframes hide {
+    0% {
+        -webkit-transform:scale(1);
+    }
+    100% {
+        -webkit-transform:scale(0);
+    }
+}
+@-webkit-keyframes jian {
+    0% {
+       opacity:0;
+    }
+    100% {
+       opacity:0.5;
+    }
+}
+@-webkit-keyframes yin {
+    0% {
+       opacity:0.5;
+    }
+    100% {
+       opacity:0;
+    }
+}
+
+/*媒体查询*/
+@media screen and (min-width:360px){
+.hb-price {
+    font-size:45px;
+
+}
+.hb-price span {
+    font-size:16px;
+}
+
+}
+@media screen and (min-width:512px){
+    .logo img {
+        width:300px;
+    }
+    .hb-price {
+        font-size:100px;
+
+    }
+    .hb-price span {
+        font-size:30px;
+    }
+    .lc {
+        font-size:20px;
+        line-height: 30px;
+    }
+    .hd {
+        font-size:18px;
+        line-height: 18px;
+    }
+    .hb-wzts {
+        font-size:20px;
+    }
+}
+
+
+.card,.card-price{ font-size:14px; width:100%; text-align:center; color:#fffca2; position:absolute; top: 0; }
+.card{ display: none; top: 40%;}
+.card-price{ top: 8%; }
+.button{ position: absolute; top: 0; left: 0; width: 100vw; height: 100vh;}
+.btn{ position: absolute; top: 64vh; left: 0; width:70%; margin-left: 15%;}
+.take{ width: 100%; text-align: center; padding-top: 14%;}
+.take img{ width: 20%; position: relative; z-index: 99; animation: take01 2s ease-in-out forwards}
+@keyframes take01 {
+  0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+}
+
+.popup{ width: 100vw; position: absolute; top: 15vh; z-index: 9999;}
+.popup img{ width: 100vw;}
+
+
+
+
+
+
+
+.main2 {
+    width: 40vw;
+    position: absolute;
+    margin-left: -20vw;
+    animation: down 1s ease-in-out forwards;
+    top: -40vh;
+    left: 50%;
+    z-index:3;
+}
+@keyframes down {
+  0%{top: -40vh}
+  80%{top: 44vh;}
+  100%{top: 40vh;}
+}
+.item1 .kodai img{ width: 40vw;}
+
+.item1 {
+  height: 150px;
+  position: relative;
+  /* padding: 30px; */
+  text-align: center;
+  -webkit-transition: top 1.2s linear;
+  transition: top 1.2s linear;
+}
+
+  .item1 .kodai {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+
+  }
+  .item1 .kodai2{animation: yao 1s 4s infinite;}
+  @keyframes yao {
+    0%,
+ 100%,
+ 20%,
+ 50%,
+ 80% {
+ transition-timing-function: cubic-bezier(0.215,.61,.355,1); /*贝塞尔曲线 ： X1 Y1 X2 Y2*/
+ transform: translate3d(0,0,0); /*设置只在Z轴上移动*/
+ }
+ 40%,
+ 43%{
+ transition-timing-function: cubic-bezier(0.755,0.50,0.855,0.060);
+ transform: translate3d(0,-20px,0);
+ }
+ 70%{
+ transition-timing-function: cubic-bezier(0.755,0.050,0.855,0.060);
+ transform: translate3d(0,-10px,0);
+ }
+ 90%{
+ transform: translate3d(0,-2px,0);
+ }
+  }
+
+    .item1 .kodai .full {
+      display: block;
+    }
+
+    .item1 .kodai .empty {
+      display: none;
+    }
+
+  .item1 .clipped-box {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    height: 540px;
+    width: 100vw;
+  }
+
+    .item1 .clipped-box img {
+      position: absolute;
+      top: auto;
+      left: 0;
+      bottom: 0;
+      -webkit-transition: -webkit-transform 1.4s ease-in, background 0.3s ease-in;
+      transition: transform 1.4s ease-in;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end */

@@ -740,6 +740,11 @@ div{
 
 /*流量转赠分享*/
 .blow-share img{ width: 6rem; height: 6.2267rem;}
+.blow-share .mb{display: block; width: 10rem; text-align: center; font-weight: bold; color: #f23329; position: absolute; top: 8.6rem; left: 0;}
+
+
+
+
 
 
 

@@ -67,7 +67,7 @@
       <div class="cue-model">
         <p class="font44">温馨提示</p>
         <span class="font40 mb">确认要支付30M流量吗？</span>
-        <em class="font26">*每天有10次机会，选取后不能修改角色</em>
+        <em class="font26">*每天有10次机会，选取后不能修改。</em>
         <a class="btn-confirm" href="javascript:;"></a>
         <a class="btn-close" href="javascript:;"></a>
       </div>
@@ -94,10 +94,7 @@
         $('.btn50').next('.line2').addClass('line1');
         $('.mb').html('确认要支付100M流量吗？');
       });
-      // $('.button a').click(function() {
-      //   $('.cue').css('display', 'block');
-      // });
-      $('.cue .btn-confirm').click(function() {
+        $('.cue .btn-confirm').click(function() {
         $('.cue').css('display', 'none');
       });
       $('.cue .btn-close').click(function() {
@@ -113,17 +110,6 @@
         <a class="btn-back" href="index.html"></a><!--返回大厅-->
       </div>
     </div>
-
-
-
-    <!-- <div class="success">
-      <div class="mask"></div>
-      <div class="success-main">
-        <a class="btnMore" href="javascript:;"></a>
-        <a class="btnShare" href="javascript:;"></a>
-      </div>
-    </div> -->
-
 
     <div class="invitation-arrow"></div>
 
@@ -162,34 +148,5 @@
     });
   </script>
 
-  <!-- <script type="text/javascript">
-    $('.shou-left-btn').click(function() {
-      // setTimeout(function(){settime()},1000)
-      settime();
-      $(this).addClass('shou-left-btn2');
-      $('.shou-right-btn').css('display', 'none');
-      $('.ball1').css('display', 'none');
-      $('.time').css('display', 'block');
-      $('.ball2').css('display', 'block');
-      $('.keeper').css('display', 'none');
-      $('.keeper-left').css('display', 'block');
-      $('.keeper-lefthand').css('display', 'none');
-      $('.keeper-lefthandOn').css('display', 'block');
-      $('.success').delay(4500).fadeIn();
-    });
-    $('.shou-right-btn').click(function() {
-      settime();
-      $(this).addClass('shou-right-btn2');
-      $('.shou-left-btn').css('display', 'none');
-      $('.ball1').css('display', 'none');
-      $('.time').css('display', 'block');
-      $('.ball3').css('display', 'block');
-      $('.keeper').css('display', 'none');
-      $('.keeper-right').css('display', 'block');
-      $('.keeper-righthand').css('display', 'none');
-      $('.keeper-righthandOn').css('display', 'block');
-      $('.success').delay(4500).fadeIn();
-    });
-  </script> -->
 </body>
 </html>

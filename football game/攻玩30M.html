@@ -33,10 +33,18 @@
       <img class="ball" src="images/gong-ball.png" alt="">
     </div>
     <div class="ball2"><!--球往左射门-->
-      <img class="ball2shoot" src="images/gong-ball.png" alt="">
+      <div class="ball2shoot-box">
+          <div class="ball2shoot-box2">
+            <img class="ball2shoot" src="images/gong-ball.png" alt="">
+          </div>
+      </div>
     </div>
     <div class="ball3"><!--球往右射门-->
-      <img class=" ball3shoot" src="images/gong-ball.png" alt="">
+      <div class="ball3shoot-box">
+          <div class="ball3shoot-box2">
+            <img class=" ball3shoot" src="images/gong-ball.png" alt="">
+          </div>
+      </div>
     </div>
     <div class="time">
       <p class="font200 timer"></p>
@@ -64,78 +72,6 @@
       <span class="line2"></span>
       <a class="btn30" href="javascript:;"></a>
     </div>
-    <!-- <div class="cue">
-      <div class="mask"></div>
-      <div class="cue-model">
-        <p class="font44">温馨提示</p>
-        <span class="font40 mb">确认要支付30M流量吗？</span>
-        <em class="font26">*每天有10次机会，选取后不能修改角色</em>
-        <a class="btn-confirm" href="javascript:;"></a>
-        <a class="btn-close" href="javascript:;"></a>
-      </div>
-    </div> -->
-    <!-- <script type="text/javascript">
-      $('.btn30').click(function() {
-        $('.mb').html('确认要支付30M流量吗？');
-        $('.take').html('30');
-        $('.btn50').removeClass('btn50-2');
-        $('.btn50').next('.line2').removeClass('line1');
-        $('.btn100').removeClass('btn100-2');
-        $('.btn100').next('.line2').removeClass('line1');
-        $('.cue .btn-close').click(function() {
-          $('.cue').css('display', 'none');
-          $('.btn50').removeClass('btn50-2');
-          $('.btn50').next('.line2').removeClass('line1');
-          $('.btn100').removeClass('btn100-2');
-          $('.btn100').next('.line2').removeClass('line1');
-        });
-      });
-      $('.btn50').click(function() {
-        $(this).addClass('btn50-2');
-        $(this).next('.line2').addClass('line1');
-        $('.mb').html('确认要支付50M流量吗？');
-        $('.take').html('50');
-        $('.btn100').removeClass('btn100-2');
-        $('.btn100').next('.line2').removeClass('line1');
-        $('.cue .btn-close').click(function() {
-          $('.cue').css('display', 'none');
-          $('.btn50').removeClass('btn50-2');
-          $('.btn50').next('.line2').removeClass('line1');
-        });
-      });
-      $('.btn100').click(function() {
-        $(this).addClass('btn100-2');
-        $(this).next('.line2').addClass('line1');
-        $('.btn50').addClass('btn50-2');
-        $('.btn50').next('.line2').addClass('line1');
-        $('.mb').html('确认要支付100M流量吗？');
-        $('.take').html('100');
-        $('.cue .btn-close').click(function() {
-          $('.cue').css('display', 'none');
-          $('.btn50').removeClass('btn50-2');
-          $('.btn50').next('.line2').removeClass('line1');
-          $('.btn100').removeClass('btn100-2');
-          $('.btn100').next('.line2').removeClass('line1');
-        });
-      });
-      $('.button a').click(function() {
-        $('.cue').css('display', 'block');
-      });
-      $('.cue .btn-confirm').click(function() {
-        $('.cue').css('display', 'none');
-      });
-    </script> -->
-
-
-    <!--创建-->
-    <!-- <div class="establish">
-      <div class="mask"></div>
-      <div class="establish-main yqfsy">
-        <a class="btn-invitation" href="javascript:;"></a>
-        <a class="btn-back" href="index.html"></a>
-      </div>
-    </div> -->
-
 
     <div class="success">
       <div class="mask"></div>
@@ -151,6 +87,7 @@
       <!-- <div class="mask"></div> -->
       <div class="success-share-main">
         <p class="font28">xxx在<span>点球员</span>活动中获得<span class="take">30</span><span>M</span>流量</p>
+        <a class="success-back-btn" href="./index.html"></a>
         <a class="success-share-btn" href="javascript:;"></a>
       </div>
     </div>
@@ -166,19 +103,7 @@
     </script>
 
   </div>
-  <!-- <script type="text/javascript">
-    $('.gong-left-btn').click(function() {
-      $('.cue').fadeIn();
-      $(this).addClass('gong-left-btn2');
-      $('.gong-right-btn').css('display', 'none');
-      $('.arrow').css('display', 'none');
-    });
-    $('.btn-confirm').click(function() {
-      $('.cue').css('display', 'none');
-      $('.establish').fadeIn();
 
-      });
-  </script> -->
   <script type="text/javascript">
     $('.gong-left-btn').click(function() {
       // setTimeout(function(){settime()},1000)

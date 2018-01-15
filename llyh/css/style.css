@@ -298,7 +298,7 @@ div{
 .index .taskList ul li{ box-shadow: none; border: 1px solid #f4f4f4;}
 
 /*赚流量*/
-.zhuan ul{ padding-left: .43rem; padding-top: .83rem;}
+.zhuan ul{ padding-left: .43rem; padding-top: .83rem; padding-bottom: 1.67rem;}
 .zhuan ul li{ float: left; margin: .32rem}
 .zhuan ul li a{ display: block; width: 2.32rem; height: 2.32rem; border-radius: .13rem; background: #fff; border: 1px solid #ededed; position: relative;}
 .zhuan ul li a i{ display: block; width: .73rem; height:.73rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.67rem; position: absolute; top: .44rem; left: .79rem;}
@@ -311,6 +311,7 @@ div{
 .zhuan ul li a .icon7{ background-position: -4.38rem -2.79rem;}
 .zhuan ul li a .icon8{ background-position: -5.11rem -2.79rem;}
 .zhuan ul li a .icon9{ background-position: -5.84rem -2.79rem;}
+.zhuan ul li a .icon10{ background-position:-6.6rem -2.79rem;}
 .zhuan ul li a span{ display: block; width: 2.32rem; text-align: center; color: #8a8a8f; margin-top:1.6rem;}
 
 
@@ -325,6 +326,7 @@ div{
 .hua ul li a .icon7{ background-position: -4.41rem -3.68rem;}
 .hua ul li a .icon8{ background-position: -5.11rem -3.68rem;}
 .hua ul li a .icon9{ background-position: -5.84rem -3.68rem;}
+.hua ul li a .icon10{ background-position: -6.6267rem -3.68rem;}
 
 
 
@@ -346,6 +348,21 @@ div{
 .search-main{ position: relative; display: none;}
 .search-main input{ width: 9.1467rem; height: 1.0667rem; background: #fff; border-radius: .1333rem; text-indent: .5333rem; border: none;}
 .search-main .btn{ width: .99rem; height: .99rem; display: block; position: absolute; top: -1.5rem; right: .5rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -2.4733rem -4.5467rem;}
+
+
+
+/*红包兑换详情页*/
+.mall-redPacket .pic{ text-align: center; width: 10rem; height: 7.0133rem; background: #fff;}
+.mall-redPacket .pic img{ text-align: center; width: 3.5067rem; height: 4.3333rem; margin-top: .9333rem;}
+.mall-redPacket .pic p{ color: #000; margin-top: .6667rem}
+.mall-redPacket .detail{ margin-top: .8rem;}
+.mall-redPacket .detail span{ color: #f22d2d; font-weight: bold; margin-left: .5333rem}
+.mall-redPacket .detail a{ display: inline-block; width: 1.9467rem; height: .72rem; background: #f22d2d; line-height: .72rem; text-align: center; color: #fff; border-radius: .1333rem; margin-right: .48rem;}
+.mall-redPacket .introduce{ width: 9.1067rem; margin: 2rem auto .4rem auto; background: #d64f47; border-radius: .2rem; color: #fff; line-height: .5333rem; padding: .5733rem .72rem; }
+.mall-redPacket .introduce .title{ color: #fff; font-weight: bold; text-align: center; background: none; position: relative; margin-bottom: .4267rem;}
+.mall-redPacket .introduce .title .mall-redPacket01{ width: .8rem; height: .92rem; position: absolute; top:0; left: 0;}
+.mall-redPacket .introduce .title .mall-redPacket02{ width: .8533rem; height: .92rem; position: absolute; top: 0; right: 0;}
+
 
 
 

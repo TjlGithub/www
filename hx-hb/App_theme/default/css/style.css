@@ -331,7 +331,7 @@ a:hover,a:visited{color:#c00; text-decoration:none;}
 .card{ display: none; top: 40%;}
 .card-price{ top: 8%; }
 .button{ position: absolute; top: 0; left: 0; width: 100vw; height: 100vh;}
-.btn{ position: absolute; top: 64vh; left: 0; width:70%; margin-left: 15%;}
+.btn{ position: absolute; top: 62vh; left: 0; width:70%; margin-left: 15%;}
 .take{ width: 100%; text-align: center; padding-top: 14%;}
 .take img{ width: 20%; position: relative; z-index: 99; animation: take01 2s ease-in-out forwards}
 @keyframes take01 {

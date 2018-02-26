@@ -12,8 +12,7 @@ ul,ol{ list-style-type: none;}
 .fr{ float: right;}
 .bg{ background:#f9f9f9;}
 .bg2{ background: #4285f4}
-input {outline: none; -webkit-appearance: none; -webkit-appearance: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+input {outline: none; -webkit-appearance: none; -webkit-appearance: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 /*字体大小*/
 div{
   font-size: 12px;
@@ -327,6 +326,7 @@ div{
 .hua ul li a .icon8{ background-position: -5.11rem -3.68rem;}
 .hua ul li a .icon9{ background-position: -5.84rem -3.68rem;}
 .hua ul li a .icon10{ background-position: -6.6267rem -3.68rem;}
+.hua ul li a .icon11{ background-position: -2.18rem -2.79rem;}
 
 
 
@@ -538,12 +538,11 @@ div{
 
 
 /*卡券详情*/
-.coupons-detail{  width: 9.2rem; height: 14.9067rem; margin: .46rem auto .4rem auto; background: #fff; border-radius: .1333rem; text-align: center; padding-top: 1.2rem}
+.coupons-detail{  width: 9.2rem; margin: .36rem auto .2rem auto; background: #fff; border-radius: .1333rem; text-align: center; padding-top: 1.2rem; padding-bottom: .8rem}
 .coupons-detail p{ color: #8A8A8F; margin-bottom: 1.1rem}
 .coupons-detail span{ color: #F23329; display: block; margin-bottom: .2rem}
 .coupons-detail i{ font-style: normal; color: #8A8A8F; display: block;}
-.coupons-detail a.button{ display: inline-block; width: 3.1467rem; height: 1.0133rem; line-height: 1.0133rem; text-align: center; border: .0267rem solid #979797; color: #8A8A8F; border-radius: .1333rem; margin: 100px
-   .4533rem 0 .4533rem;}
+.coupons-detail a.button{ display: inline-block; width: 3.1467rem; height: 1.0133rem; line-height: 1.0133rem; text-align: center; border: .0267rem solid #979797; color: #8A8A8F; border-radius: .1333rem; margin: 1.3333rem .4533rem 0 .4533rem;}
 .coupons-detail a.use{ background: #F23329; border-color: #F23329; color: #fff;}
 .coupons-detail ul { width: 8.16rem; margin: 1.28rem auto 0 auto;}
 .coupons-detail ul li a{ display: block; width: 100%; height: 1.4933rem; line-height: 1.4933rem; position: relative; border-top: .0267rem solid #e6e6e6; text-align: left; text-indent: .0267rem; color: #444;}
@@ -742,7 +741,6 @@ div{
 
 
 /*流量交易所*/
-.exchange{}
 .exchange .tab{ width: 10rem; margin:0; }
 .exchange .tab li{float:left; width:5rem; height:1.1467rem; line-height: 1.1467rem; background:#fff; color:#4285F4; border-bottom: 1px solid #f2f2f2; text-align:center; cursor:pointer;}
 .exchange .tab li span{ width: 1.8933rem; height:1.1067rem; display: block; margin: 0 auto; border-bottom: .0267rem solid #fff; text-align: center;}
@@ -813,6 +811,230 @@ div{
 
 
 
+/* new */
+/*交易所*/
+.flowExchange .retrie { position: relative; z-index: 102; background-color: #fff;}
+.flowExchange .retrie dt { overflow: hidden; border-bottom: 1px solid #e9e9e9;}
+.flowExchange .retrie dt a { position: relative; float: left; width: 33.33333333%; height: .9333rem; line-height: .9333rem; color: #1e1e1e; text-align: center;}
+.flowExchange .retrie dt a:after { position: absolute; top: 45%; left: 50%; margin-top: -.14rem; margin-left: .85rem; width: .2rem; height: .2rem; border: #666 solid;
+  border-width: .04rem .04rem 0 0; content: ' ';  -webkit-transform: rotate(135deg);}
+.flowExchange .retrie dt a:first-child:after{ margin-left: .5rem;}
+.flowExchange .retrie dt a:last-child:after{ margin-left: 1rem;}
+.flowExchange .retrie dt .up { color: #4285f4;}
+.flowExchange .retrie dt .up:after { margin-top: -.06rem; border: #4285f4 solid;  border-width: .04rem .04rem 0 0;  -webkit-transform: rotate(-45deg);}
+.flowExchange .retrie dd { position: relative; }
+
+.flowExchange .slide { position: absolute; top: 0px; left: 0; z-index: 104; display: none;
+  width: 100%; overflow-y: auto; background-color: #fff;}
+.flowExchange .slide li { display: block; height: .9467rem; border-bottom: .0267rem solid #e9e9e9;}
+.flowExchange .slide li a { display: block; padding: 0 .6rem; height: .9467rem; background-color: transparent; line-height: .9467rem; color: #1c1c1c;}
+.flowExchange .slide li .on { color: #4285f4;}
+.flowExchange .mask{ position: absolute; top: 2.1033rem; left: 0; width: 10rem; height: calc(100vh - 2.1033rem); background: #000; opacity: .5; z-index: 90; display: none;}
+.flowExchange .mask2{ position: absolute; top: 1.17rem; left: 0; width: 10rem; height: calc(100vh - 1.17rem); background: #000; opacity: .5; z-index: 103; display: none;}
+.flowExchange ul li{ width: 10rem; height: 3.2rem; background: #fff; margin: .1733rem 0 .2667rem 0; position: relative;}
+.flowExchange ul li .coupon{ width: 2.84rem; height: 1.64rem; background: url(../images/exchange-coupon.jpg) no-repeat; background-size: 2.84rem 1.64rem; position: absolute; top: .38rem; left: .5rem; color: #fff; text-align: center; display: table;}
+.flowExchange ul li .coupon .content{ vertical-align:middle; display:table-cell;}
+.flowExchange ul li p{ color: #666; position: absolute; left: 4.6rem; top: .44rem; line-height: .49rem;}
+.flowExchange ul li p span{ display: block;}
+.flowExchange ul li p span i{ font-style: normal; color: #f33f37;}
+.flowExchange ul li .timer{ color: #666; position: absolute; top: 0; left: .5rem; top: 2.4933rem;}
+.flowExchange ul li .btn-buy{ display: block; width: 1.56rem; height: .5867rem; border-radius: .1333rem; border: 1px solid #f33f37; color: #f33f37; text-align: center; line-height: .5867rem; position: absolute; top: 2.3rem; right: .74rem;}
+.flowExchange .payment{ width: 10rem; height: 10.4133rem; background: #fff; position: fixed; bottom: 0; display: none; z-index: 10000;}
+.flowExchange .payment p{ width: 10rem; height: 1.5733rem; line-height: 1.5733rem; border-bottom: 1px solid #cdcdcd; text-align: center; color: #333; }
+.flowExchange .payment .mb{ color: #fd0202; text-align: center; display: block; line-height: 2.6667rem; margin-top: .2667rem;}
+.flowExchange .payment .close{ display: block; position: absolute; top: 0; right:0; width: 1.8rem; height: 1.5733rem;}
+.flowExchange .payment .close i{ display: block; width: .4rem; height: .4rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -3.7333rem -.7333rem; position: absolute; top: .5333rem; right: .6667rem;}
+.flowExchange .payment ul li{width: 9.0933rem; height: 1.3333rem; line-height: 1.3333rem; margin: 0 auto; border-bottom: 1px solid #f1f1f1; text-indent: .3467rem; color: #666;}
+.flowExchange .payment .btn{ margin: 1.2rem auto 0 auto;}
+.flowExchange .payment2{ height: 7rem;}
+.flowExchange .payment2 ul{ margin-top: .6rem;}
+.flowExchange .payment2 ul li{ border: 0;}
+.flowExchange .payment2 .btn{ margin: .8rem auto 0 auto;}
+
+
+/*流量券发布*/
+.couponRelease{ width: 10rem; height: 6.5067rem; padding: 0 .5333rem; color: #333;}
+.couponRelease .group{ border-bottom: .0267rem solid #e5e5e5; line-height: 1.5rem; }
+.couponRelease .group input{ border: none; text-indent: .1rem; width: 7rem; height: 1.3333rem;}
+.couponRelease .group textarea{ border: 0; width: 7.4rem; height: 3.1467rem; margin-top: .5rem; float: left; text-indent: .18rem; resize:none;}
+.couponRelease .describe label{float: left;}
+.couponRelease .describe{ height: 4rem;}
+.couponRelease .time{ color: #666; margin: .48rem 0;}
+.couponRelease .block{ width: 10rem; height: .3333rem; background: #f3f5f9; margin-left: -.5333rem;}
+.couponRelease ul li{ width: 100%; height: 1.5333rem; line-height: 1.5333rem; border-bottom: .0267rem solid #e5e5e5; position: relative;}
+.couponRelease ul li:last-child{ border: 0;}
+.couponRelease ul li label{ float: left; width: 20%}
+.couponRelease ul li input{ float: left; line-height: 1.5rem; border: 0; width: 80%; text-align: right; padding-right: 2.4rem; }
+.couponRelease ul li .mb{ position: absolute; top: 0; right: 1.4rem;}
+.couponRelease ul li .classify{height: 1.5333rem; line-height: 1.5333rem; float:left; width: 80%; text-align: right; padding-right: 1.3333rem}
+.couponRelease ul li i{ display: inline-block; width: .56rem; height: .56rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -1.3733rem 0; position: absolute; top: .46rem; right: .08rem;}
+.couponRelease .btn{ margin-bottom: .4rem;}
+  /*流量充值&流量券发布 弹出层垂直居中调整*/
+.recharge .checkMain{ z-index: 999;width: 8rem; margin: 0 auto; background: #fff; position: fixed; top: 50%; transform: translate(0,-50%);margin-left:1rem; border: 1px solid #ededed; display: none;}
+.couponRelease .recharge .checkMain{ margin-left: .4667rem; }
+
+/*流量券详情*/
+  /*卡券详情调整*/
+.coupons-detail{  width: 9.2rem; margin: .36rem auto .2rem auto; background: #fff; border-radius: .1333rem; text-align: center; padding-top: 1.2rem; padding-bottom: .8rem}
+
+
+
+/*流量宝*/
+.flowTreasure .info{ width: 10rem; height: 3.88rem; padding-top: .2rem; background: #4285f4; text-align: center; color: #fff; line-height: 1.1rem;}
+.flowTreasure .info span,.flowTreasure .info strong{ display: block;}
+.flowTreasure .info .total i{ display: inline-block; width: .5067rem; height: .3067rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -7.4533rem 0; margin-left: .4533rem;}
+.flowTreasure .info .total i.on{ background-position: -7.96rem 0;}
+.flowTreasure .info .total b{ display: none; font-weight: normal;}
+.flowTreasure .info .total b.show{ display: inline-block;}
+.flowTreasure .info .total em.hide{ display: none;}
+.flowTreasure .addUp{ width: 10rem; height: 1.8667rem; background: #2b76f3; line-height: 1.8667rem; text-align: center; color: #fff;}
+.flowTreasure .addUp i{ display: inline-block; width: .4533rem; height: .5067rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -8.5067rem 0; vertical-align: middle; margin-top: -.1333rem; margin-right: .4267rem;}
+.flowTreasure ul li a{ display: block; width: 10rem; height: 1.5467rem; line-height: 1.5467rem; color: #303030; border-bottom: .0267rem solid #e9e9e9; text-indent: 1.6rem; position: relative;}
+.flowTreasure ul li a i{ display: inline-block; width: .56rem; height: .56rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -1.3733rem 0; position: absolute; top: .46rem; right: .8667rem;}
+.flowTreasure ul li a em{ display: inline-block; width: .4933rem; height: .48rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; position: absolute; top: .48rem; left: .8267rem;}
+.flowTreasure ul li a em.icon1{ background-position: 0 -5.16rem;}
+.flowTreasure ul li a em.icon2{ background-position: -.4933rem -5.16rem;}
+.flowTreasure ul li a em.icon3{ background-position: -.9867rem -5.16rem;}
+
+.flowTreasure .how i{ display: inline-block; width: .5333rem; height: .5333rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -2.7467rem -.7333rem; margin-left: 2.7733rem; vertical-align: middle;}
+.flowTreasure .how{ color: #333; margin-top: .5rem; margin-bottom: .5rem; height: .8rem; width: 100%; vertical-align: middle; display: block; margin: 1.3333rem 0 1.12rem 0;}
+.flowTreasure .how span{ vertical-align: middle;}
+.flowTreasure .bottom-btn{position: fixed; bottom: 0; line-height: 1.3867rem; text-align: center;}
+.flowTreasure .bottom-btn .in{ display: block; float: left; width: 5rem; height: 1.3867rem; border-top: 1px solid #e8e8e8; color: #4285f4; background: #fff;}
+.flowTreasure .bottom-btn .out{ display:block; float: left; width: 5rem; height: 1.3867rem; border-top: 1px solid #4285f4; color: #fff; background: #4285f4;}
+
+
+/*流量宝 转入&转出流量*/
+.flowTreasureInOut .f1{ width: 10rem; height: 1.68rem; line-height: 1.68rem; text-align: center; font-weight: bold; color: #333; border-bottom: .0267rem solid #eaeae9;}
+.flowTreasureInOut .f1 span{ color: #4285F4; font-weight: 900; margin: 0 .08rem;}
+.flowTreasureInOut .f2{ width: 10rem; color: #333; border-bottom: 1px solid #eaeae9;  padding-bottom: .4rem; position: relative;}
+.flowTreasureInOut .f2 p{ color: #333; text-indent: .4rem; margin: .6rem 0 .3rem 0;}
+.flowTreasureInOut .f2 input{ width: 9.2rem; height: 1.1rem; line-height: 1.1rem; margin-left: .4rem; border:0; color: #4285f4; }
+.flowTreasureInOut .f2 .font56::-webkit-input-placeholder{ color: #cdcdcd;}
+.flowTreasureInOut .f2 .font56::-webkit-input-placeholder{
+  font-size: 16px;
+}
+[data-dpr="2"] .flowTreasureInOut .f2 .font56::-webkit-input-placeholder{
+  font-size: 32px;
+}
+[data-dpr="3"] .flowTreasureInOut .f2 .font56::-webkit-input-placeholder{
+  font-size: 48px;
+}
+.flowTreasureInOut .f2 .close{ position: absolute; top: .8rem; right:.4rem; width: 1.1rem; height: 1.1rem; display: none;}
+.flowTreasureInOut .f2 .close i{ display: block; width: .4rem; height: .4rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -3.7333rem -.7333rem; position: absolute; top: .35rem; right: .35rem;}
+.flowTreasureInOut .f3{ width: 10rem; height: 1.36rem; line-height: 1.36rem; color: #333; border-bottom: 1px solid #eaeae9; text-indent: .4rem;}
+.flowTreasureInOut .f3 span{ color: #4285F4;}
+
+
+
+/*通用弹窗*/
+.model{ display: none;}
+.model .modelMain{ z-index: 999; width: 8rem; background: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: .1333rem; z-index: 104;}
+.model .mask{ position: absolute; top: 0; left: 0; width: 10rem; height: 100vh; background: #000; opacity: .5; z-index: 103;}
+.model .close{ display: block; position: absolute; top: 0; right:0; width: 1.17rem; height: 1.17rem; z-index: 105;}
+.model .close i{ display: block; width: .4rem; height: .4rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -3.7333rem -.7333rem; position: absolute; top: .35rem; right: .35rem;}
+.model .modelMain .title{width: 100%; height: 1.17rem; line-height: 1.17rem; text-align: center; background: #fff; border-bottom: 1px solid #cdcdcd; color: #333; border-radius: .1333rem .1333rem 0 0;}
+.model .modelMain .content{ width: 100%; padding: .4rem .6rem .8rem .6rem; line-height: .7rem; color: #666;}
+  /*.close冲突*/
+.model .close2{ display: block; position: absolute; top: 0; right:0; width: 1.17rem; height: 1.17rem; z-index: 105;}
+.model .close2 i{ display: block; width: .4rem; height: .4rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -3.7333rem -.7333rem; position: absolute; top: .35rem; right: .35rem;}
+
+
+
+/*流量宝余额自动转入*/
+.flowTreasureAuto .f1,.flowTreasureAuto .f2{width: 100%;  height: 1.3467rem; line-height: 1.3467rem; color: #333; text-indent: .48rem; border-bottom: 1px solid #eaeae9; position: relative;}
+.flowTreasureAuto .f2{ position: relative;}
+.flowTreasureAuto .f2 input{ width: 60%; height: 1.3rem; line-height:1.3rem; margin-left: .4rem; border:0; color: #4285f4;}
+.flowTreasureAuto .f2 input::-webkit-input-placeholder{ color: #c1c1c1;}
+.flowTreasureAuto .f2 .close{ position: absolute; top: .1rem; right:.4rem; width: 1.1rem; height: 1.1rem; display: none;}
+.flowTreasureAuto .f2 .close i{ display: block; width: .4rem; height: .4rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -3.7333rem -.7333rem; position: absolute; top: .35rem; right: .35rem;}
+.flowTreasureAuto .tips{ width: 100%; height: 1.7333rem; line-height: 1.7333rem; text-indent: .48rem; color: #333;}
+.flowTreasureAuto .tips span{ color: #4285F4; margin: 0 .08rem;}
+.flowTreasureAuto .agreement{text-indent: .48rem; color: #333;}
+.flowTreasureAuto .agreement a{ color: #4285F4;}
+.flowTreasureAuto .hide{ display: none;}
+.flowTreasureAuto .tip{ width: 90%; margin: .4rem auto; color: #999; }
+.flowTreasureAuto .model .modelMain .content{ height: 8.6667rem; overflow-y: auto;}
+    /* 开关 */
+.mui-switch { width: 1.9467rem; height: .6133rem; position: relative; border: 1px solid #999;
+box-shadow: #999 0 0 0 0 inset; border-radius: .1067rem; background-clip: content-box; display: inline-block; -webkit-appearance: none; user-select: none; outline: none; background: #999; position: absolute; top: .36rem; right: .48rem;}
+.mui-switch:before { content: ''; width: .9467rem; height: .56rem; position: absolute; top: 0; left: 0; border-radius: .08rem; background-color: #fff; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+.mui-switch:checked { border-color: #4285F4; box-shadow: #4285F4 0 0 0 16px inset; background-color: #4285F4; }
+.mui-switch:checked:before { left: .9467rem;}
+.mui-switch.mui-switch-animbg { transition: background-color ease 0.4s;}
+.mui-switch.mui-switch-animbg:before { transition: left 0.3s; }
+.mui-switch.mui-switch-animbg:checked { box-shadow: #dfdfdf 0 0 0 0 inset; background-color: #4285F4; transition: border-color 0.4s, background-color ease 0.4s; }
+
+
+
+/*运动*/
+.sport .f1{ width: 9.4133rem; margin: .2667rem auto .7733rem auto; border: 1px solid #e3e3e4; border-radius: .3333rem; background: #fff; padding-top: .2267rem;}
+.sport .f1 .yuan{ width: 100%; height: 4.2rem; margin-top: .2667rem;}
+.sport .f1 .yuan .move{ width: 4.9rem; height: 4.9rem; margin: 0 auto; position: relative;}
+.sport .f1 .yuan .circleRun{ width: 4.9rem; height: 4.9rem;}
+.sport .f1 .yuan .info{ position: absolute; top: 1.3rem; left: 0; text-align: center;}
+.sport .f1 .yuan .info p{ color: #8c8c8c;}
+.sport .f1 .yuan .info span{ display: block; width: 4.9rem; color: #565656; font-weight: bold;}
+.sport .f1 .yuan .info em{ color: #999; line-height: 1.4rem;}
+.sport .f1 .cover{ width: 8.96rem; height: 3.4rem; background: url(../images/sport-cover.jpg) no-repeat; background-size: 8.96rem 3.4rem; margin: 0 auto; border-radius: .1333rem; text-align: center;}
+.sport .f1 .cover .occupation{ width: 100%; height: 1.3867rem; line-height: 1.3867rem; color: #fff; text-shadow: .0267rem .0267rem .0267rem #333;}
+.sport .f1 .cover .occupation img{ width: .7333rem; height: .7333rem; border-radius: 50%; vertical-align: middle; margin-top: -.1333rem;}
+.sport .f1 .mineAvatar{ width: 3.6267rem; height: 1.56rem; margin: -.4133rem auto 0 auto; background: url(../images/sport-mineAvatar.png) no-repeat top; text-align: center; padding-top: .3067rem;}
+.sport .f1 .mineAvatar img{ width: 1.2rem; height: 1.2rem; border-radius: 50%;}
+.sport .f1 ul{ width: 100%; height: 1.0933rem; line-height: 1.0933rem; margin-top: .6rem;}
+.sport .f1 ul li{ width: 33.3333%; float: left; text-align: center; color: #888; position: relative;}
+.sport .f1 ul li i{ width: .36rem; height: .3333rem; display: inline-block; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; margin-right: .1333rem;}
+.sport .f1 ul li i.icon1{ background-position: 0 -5.8rem;}
+.sport .f1 ul li i.icon2{ background-position: -.36rem -5.8rem;}
+.sport .f1 ul li i.icon3{ background-position: -.72rem -5.8rem;}
+.sport .f1 ul li a{ color: #888888;}
+.sport .f1 .sportBtn{ width: 3.7333rem; height: 1.0133rem; border-radius: .2rem; text-align: center; line-height: 1.0133rem; color: #fff; display: inline-block; margin-left: .4rem;}
+.sport .f1 .sportBtnLeft{ background: #4285f4; margin-right: .4933rem;}
+.sport .f1 .sportBtnRight{ background: #d44842;}
+.sport .f1 .changeP{ color: #666; text-align: center; margin-top: .48rem;}
+.sport .f1 .rule{ text-align: center; margin-top: .16rem; margin-bottom: .4rem;}
+.sport .f1 .rule a{ color: #999;}
+.sport .rankingList{ }
+.sport .rankingList .title{ width: 100%; height: 1.24rem; line-height: 1.24rem; color: #555; text-indent: .4133rem; font-weight: bold; background: #fff; text-align: left;}
+.sport .rankingList ul{margin-bottom: .2667rem;}
+.sport .rankingList ul li{ width: 100%; height: 1.7867rem; line-height: 1.7867rem; position: relative;}
+.sport .rankingList ul li b{ color: #999; padding: 0 .48rem;}
+.sport .rankingList ul li b.on{ color: #f2332a; }
+.sport .rankingList ul li img{width: 1.08rem; height: 1.08rem; border-radius: 50%; vertical-align: middle;}
+.sport .rankingList ul li span{ color: #6a6a6a; margin-left: .32rem;}
+.sport .rankingList ul li em{ font-weight: bold; color: #38adff; margin-left: 2.5333rem;}
+@media screen and (max-width: 640px){ .sport .rankingList ul li em { margin-left: 1.8rem;}}
+.index .list li .progress span b{color: #4285f4; font-weight: normal;}
+.sport .rankingList ul li .praise{ display: block; position:absolute; width: .9333rem; height: .9333rem; right: .3rem; top: .6rem;}
+.sport .rankingList ul li .praise span{color: #f2332a; display: block; line-height: 0; height: .3rem;}
+.sport .rankingList ul li .praise i{ display: block; width: .44rem; height: .3867rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -1.6533rem -5.76rem;margin-left: .28rem;}
+.sport .rankingList ul li .praise i.on{background-position: -1.12rem -5.76rem;}
+
+.sport .model .mask{ width: 100%; height: 100vh; background: #000; position: fixed; top: 0;  left: 0; z-index: 998; opacity: .5; display: block;}
+.sport .model .modelMain{ z-index: 999; width: 6.96rem; margin: 0 auto; background: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); border: 1px solid #ededed; display: block;}
+.sport .model .modelMain .top{width: 100%; height: 1.9467rem; background: #4285f4; line-height: 1.9467rem; color: #fff; text-align: center; border-bottom: 1px dashed #fff; margin-bottom: .9333rem;border-top-left-radius: .1333rem; border-top-right-radius: .1333rem;}
+.sport .model .modelMain p{ color: #000; text-align: center; text-indent: .5rem; position:relative; margin: .2667rem 0; }
+.sport .model .modelMain p span{display: inline-block; width: .2rem; height: .2rem; border-radius: 100%; background: #4285F4;position: absolute;top: .16rem;left: 1.4rem;}
+.sport .model .modelMain a{ display: inline-block; width: 3.2133rem; height: .9733rem; color: #fff; text-align: center; line-height:.9733rem; border-radius: .2rem; margin:.5rem .09rem .5rem .09rem;}
+.sport .model .modelMain .btn-cancel{background: #cfc8c6;}
+.sport .model .modelMain .btn-confirm{ background: #4285F4;}
+
+.sport .model2{ display: none;}
+.sport .model2 .modelMain{ z-index: 999; width: 8rem; background: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: .1333rem; z-index: 104;}
+.sport .model2 .mask{ position: fixed; top: 0; left: 0; width: 10rem; height: 100vh; background: #000; opacity: .5; z-index: 103;}
+.sport .model2 .close{ display: block; position: absolute; top: 0; right:0; width: 1.17rem; height: 1.17rem; z-index: 105;}
+.sport .model2 .close i{ display: block; width: .4rem; height: .4rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -3.7333rem -.7333rem; position: absolute; top: .35rem; right: .35rem;}
+.sport .model2 .modelMain .title{width: 100%; height: 1.17rem; line-height: 1.17rem; text-align: center; background: #fff; border-bottom: 1px solid #cdcdcd; color: #333; border-radius: .1333rem .1333rem 0 0;}
+.sport .model2 .modelMain .content{ width: 100%; padding: .4rem .6rem .8rem .6rem; line-height: .7rem; color: #666;}
+
+
+/*运动谁赞过我*/
+.sport-praise ul{ margin: .2667rem 0 .1333rem 0;}
+.sport-praise ul li{ width: 100%; height: 1.6267rem; background: #fff; margin-bottom: .2667rem; color: #999; line-height: 1.6267rem;}
+.sport-praise ul li img{ display: inline-block; width: .72rem; height: .72rem; border-radius: 50%; vertical-align: middle; margin-top: -.2rem; margin-left: 1.0667rem;}
+.sport-praise ul li span{margin-left: .56rem;}
+.sport-praise ul li em{margin-left: .4rem;}
+.sport-praise ul li b{ font-weight: normal; margin-left: 2rem;}
 
 
 
@@ -823,6 +1045,8 @@ div{
 
 
 
+/*全局调整*/
+.zhuan ul{overflow: hidden;}
 
 
 
